@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
-  m_Name: RiverRock
+  m_Name: MinerHat
   m_EditorClassIdentifier: 
-  Name: River Rock
+  Name: Miner hat
   ItemImage: {fileID: 0}
-  Description: A smooth river rock of little value.
+  Description: Look a Miner wore this
