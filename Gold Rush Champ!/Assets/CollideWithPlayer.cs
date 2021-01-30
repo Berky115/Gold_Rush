@@ -19,8 +19,10 @@ public class CollideWithPlayer : MonoBehaviour
         // called when this GameObject collides with GameObject2.
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("GameObject1 collided with " + col.name);
-        Destroy(gameObject);
+        if(col.gameObject.tag == "Player") {
+            Debug.Log("GameObject1 collided with " + col.name);
+            Destroy(gameObject);
+        }
 
     }
 }
