@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 448c4e06348600409277981a20b660ca
     GuidInternal: 
-    m_lastTime: -8585896222425078335
+    m_lastTime: -8585896215889623838
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3768c276d5b11b458df4e2d9e9f5c1a3
     GuidInternal: 
-    m_lastTime: -8585896222425559607
+    m_lastTime: -8585896215889663874
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2d01e44e75a9e64ba62822c013a4ca82
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585895792981662638
+=======
+    m_lastTime: -8585896215889643856
+>>>>>>> Stashed changes
     List:
     - name: Main
       guid: bac8264ab69d954fb9479730d78285d7
@@ -68,7 +72,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d9120a16e6a86644a0c2bdc5a2a88fc6
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585895792981727690
+=======
+    m_lastTime: -8585896215889723925
+>>>>>>> Stashed changes
     List:
     - name: Play_Music
       guid: 5c259c9afd81c34498864fe144c57243
@@ -102,6 +110,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 40d05cae6dba924082256d37d508e438
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585895794116015534
     List:
     - name: Corruption
@@ -113,6 +122,10 @@ MonoBehaviour:
       - ElementName: Corruption
         ObjectType: 13
       Path: Default Work Unit\Corruption
+=======
+    m_lastTime: -8585896215889713921
+    List: []
+>>>>>>> Stashed changes
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -121,7 +134,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5870a35dd8b1d74a9571fe8246963073
     GuidInternal: 
-    m_lastTime: -8585896222425098383
+    m_lastTime: -8585896215889643856
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -131,7 +144,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 366f11a675ed4644993b277fff6762c3
     GuidInternal: 
-    m_lastTime: -8585896222425679935
+    m_lastTime: -8585896215889633844
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -141,7 +154,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2ca1f2690bf2d0448cd61c89b44c1c5f
     GuidInternal: 
-    m_lastTime: -8585896222425735077
+    m_lastTime: -8585896215889633844
     List: []
   ExpandedItems: []
   autoPopulateEnabled: 1
