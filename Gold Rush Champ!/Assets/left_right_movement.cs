@@ -5,12 +5,13 @@ using UnityEngine;
 public class left_right_movement : MonoBehaviour
 {
     public float moveSpeed = 3f;
+    public float multiplier = 1.5f;
     void Start () {
    
     }
    
     void Update ()
-    {                         //Left/Right
-        transform.Translate(Vector3.right * Time.deltaTime * Input.GetAxis("Horizontal")* moveSpeed);      
+    {                     
+        transform.Translate(Vector3.right * Time.deltaTime*multiplier * Input.GetAxis("Horizontal")* moveSpeed);      
     }
 }
