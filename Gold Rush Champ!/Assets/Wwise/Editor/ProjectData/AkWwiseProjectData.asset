@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3768c276d5b11b458df4e2d9e9f5c1a3
     GuidInternal: 
-    m_lastTime: -8585895644888611184
+    m_lastTime: -8585895619947403855
     List:
     - name: Ambience
       guid: e71c3a2a4c1f994b8ddcb4dfc5d70468
@@ -60,7 +60,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2d01e44e75a9e64ba62822c013a4ca82
     GuidInternal: 
-    m_lastTime: -8585895643964737989
+    m_lastTime: -8585895619947403855
     List:
     - name: Main
       guid: bac8264ab69d954fb9479730d78285d7
@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d9120a16e6a86644a0c2bdc5a2a88fc6
     GuidInternal: 
-    m_lastTime: -8585895644325220260
+    m_lastTime: -8585895619947463910
     List:
     - name: Play_Ambience
       guid: 12075bb55754364c8dc26e1c503dae2f
@@ -139,8 +139,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\TestEvent
       maxAttenuation: 0
-      maxDuration: 9.244208
-      minDuration: 9.244208
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
