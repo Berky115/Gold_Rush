@@ -42,6 +42,7 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
+<<<<<<< HEAD
     uniqueID: 1680459489
     locked: 0
   - name: Interactable
@@ -49,4 +50,13 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2499719907
+=======
+    uniqueID: 2966151691
+    locked: 0
+  - name: Interactable
+    uniqueID: 1112200429
+    locked: 0
+  - name: Player
+    uniqueID: 1232221119
+>>>>>>> main
     locked: 0
