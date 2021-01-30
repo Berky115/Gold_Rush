@@ -11,16 +11,52 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4276098158">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1710384424">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2182326840">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="475419321" Language="SFX">
+							<ShortName>Bounced Files\n_ggr_piano_140bpm_4-4_41b.wav</ShortName>
+							<Path>SFX\Bounced Files\n_ggr_piano_140bpm_4-4_41b_9EDFC787.wem</Path>
+						</File>
+						<File Id="516548471" Language="SFX">
+							<ShortName>Bounced Files\d_ggr_banjo_140bpm_4-4_41b.wav</ShortName>
+							<Path>SFX\Bounced Files\d_ggr_banjo_140bpm_4-4_41b_9EDFC787.wem</Path>
+						</File>
+						<File Id="623389939" Language="SFX">
+							<ShortName>Bounced Files\n_ggr_violin2_140bpm_4-4_41b.wav</ShortName>
+							<Path>SFX\Bounced Files\n_ggr_violin2_140bpm_4-4_41b_9EDFC787.wem</Path>
+						</File>
+						<File Id="661022148" Language="SFX">
+							<ShortName>Bounced Files\d_ggr_guitar_140bpm_4-4_41b.wav</ShortName>
+							<Path>SFX\Bounced Files\d_ggr_guitar_140bpm_4-4_41b_9EDFC787.wem</Path>
+						</File>
+						<File Id="689993042" Language="SFX">
+							<ShortName>Bounced Files\d_ggr_ambience_140bpm_4-4_41b.wav</ShortName>
+							<Path>SFX\Bounced Files\d_ggr_ambience_140bpm_4-4_41b_9EDFC787.wem</Path>
+						</File>
+						<File Id="727914184" Language="SFX">
+							<ShortName>Bounced Files\n_ggr_guitar_140bpm_4-4_41b.wav</ShortName>
+							<Path>SFX\Bounced Files\n_ggr_guitar_140bpm_4-4_41b_9EDFC787.wem</Path>
+						</File>
+						<File Id="749725875" Language="SFX">
+							<ShortName>Bounced Files\n_ggr_bass_140bpm_4-4_41b.wav</ShortName>
+							<Path>SFX\Bounced Files\n_ggr_bass_140bpm_4-4_41b_9EDFC787.wem</Path>
+						</File>
+						<File Id="984267069" Language="SFX">
+							<ShortName>Bounced Files\n_ggr_violin_140bpm_4-4_41b.wav</ShortName>
+							<Path>SFX\Bounced Files\n_ggr_violin_140bpm_4-4_41b_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1097980931" Name="TestEvent" ObjectPath="\Events\Default Work Unit\TestEvent" DurationType="OneShot" DurationMin="9.244208" DurationMax="9.244208">
 					<IncludedMemoryFiles>
 						<File Id="250837756" Language="SFX">
@@ -30,6 +66,9 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1614265074" Name="Corruption" ObjectPath="\Game Parameters\Default Work Unit\Corruption"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

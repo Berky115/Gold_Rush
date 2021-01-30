@@ -1,6 +1,736 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{487BB1BA-4DD1-4405-B09B-5FF82FFA30E9}" SchemaVersion="97">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{487BB1BA-4DD1-4405-B09B-5FF82FFA30E9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{487BB1BA-4DD1-4405-B09B-5FF82FFA30E9}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="MainThemeContainer" ID="{009DEB34-6AFC-416A-AD70-21F5D5E216E8}" ShortID="1028161527">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="140"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="MainTheme" ID="{21849AC7-2D5B-4FA2-8561-200E6B8DD66C}" ShortID="533577195">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="185326.823795181"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="d_ggr_ambience_140bpm_4-4_41b" ID="{881F13A4-F5CF-4724-BC51-0266CF9E8B43}" ShortID="58079923">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{EAA79410-98D0-441A-9C7A-E3486401F40B}" ShortID="626557964">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C204DE06-D41A-4FF8-B666-C1D5C30E48E5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="d_ggr_ambience_140bpm_4-4_41b" ID="{1504FEC8-5FD3-419D-848E-C5BE44C97E93}">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\d_ggr_ambience_140bpm_4-4_41b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="689993042"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B89EC08A-6D66-44E6-806D-836A57DA7F8C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{96B5C1F2-828D-4125-B751-90748B336270}">
+											<ClipList>
+												<MusicClip Name="d_ggr_ambience_140bpm_4-4_41b" ID="{D0A527EE-E482-415A-AA07-6BFB5EB1E632}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="76732.1666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="d_ggr_ambience_140bpm_4-4_41b" ID="{1504FEC8-5FD3-419D-848E-C5BE44C97E93}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="d_ggr_banjo_140bpm_4-4_41b" ID="{86EDBA06-AC78-49D2-BE61-8AF32A745E32}" ShortID="671162423">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{C48E50EB-E853-425E-8583-F8EF014C16F0}" ShortID="942788417">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{ED3FAE2F-815B-460E-8E55-587F8F210E87}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="d_ggr_banjo_140bpm_4-4_41b" ID="{F3246FD5-705C-4884-9482-ED093621C54A}">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\d_ggr_banjo_140bpm_4-4_41b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="516548471"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{61A44E4E-A7D8-4BEF-A1A6-45DC2C60F25F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{6A68CEC5-A331-4E4D-9BED-41BAC1CD8158}">
+											<ClipList>
+												<MusicClip Name="d_ggr_banjo_140bpm_4-4_41b" ID="{FE87085A-826B-41BC-B0F5-4625C76D6D73}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="52244.3333333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="d_ggr_banjo_140bpm_4-4_41b" ID="{F3246FD5-705C-4884-9482-ED093621C54A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="d_ggr_guitar_140bpm_4-4_41b" ID="{71BFF8FE-7B03-47E4-9ABC-8577C3E9260B}" ShortID="213312468">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{8EDD2CBA-3A83-45BF-952C-93750DF115DA}" ShortID="87014254">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{093D15EE-20D5-4F49-9750-D45D12074A90}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="d_ggr_guitar_140bpm_4-4_41b" ID="{C9F708E5-1C62-48BB-A179-E72FCFB89279}">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\d_ggr_guitar_140bpm_4-4_41b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="661022148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{F821CD56-C394-4DE4-92C8-A1D33BE48AE1}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{47E8C68A-2CA1-4EB3-A9CB-A7640381937E}">
+											<ClipList>
+												<MusicClip Name="d_ggr_guitar_140bpm_4-4_41b" ID="{36D4CE38-CAF5-450E-97FD-954C913CE5A5}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="70536.125"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="d_ggr_guitar_140bpm_4-4_41b" ID="{C9F708E5-1C62-48BB-A179-E72FCFB89279}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="n_ggr_bass_140bpm_4-4_41b" ID="{EB192B2C-9B8A-4AA1-99F9-7A145C1A2364}" ShortID="725975007">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{8E1D2E41-545B-4AA0-8A11-9E0DD3782540}" ShortID="1066540093">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{B874F046-878D-4CB3-B11A-8B357447AC94}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>-3.99658</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="n_ggr_bass_140bpm_4-4_41b" ID="{A95869E2-5B4A-4B7D-955A-7ECC51E50403}">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\n_ggr_bass_140bpm_4-4_41b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="749725875"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5D68AB40-DB5E-4AF2-B1BB-9058F1B78630}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{2C946C30-A725-4FAE-A56E-16FF568CB3AE}">
+											<ClipList>
+												<MusicClip Name="n_ggr_bass_140bpm_4-4_41b" ID="{18E64D3E-8E90-4324-89BC-67563235F3D9}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="70008.1666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="n_ggr_bass_140bpm_4-4_41b" ID="{A95869E2-5B4A-4B7D-955A-7ECC51E50403}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="n_ggr_guitar_140bpm_4-4_41b" ID="{4512D5C9-9E32-4B60-8187-4BF5C4CAC4FE}" ShortID="1033695873">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{B865C7A6-A419-42BD-B2FE-EE554619EA1B}" ShortID="529629175">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{691E881E-5FE8-4325-900C-55D51B0C3566}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.00523560209424</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="n_ggr_guitar_140bpm_4-4_41b" ID="{3F3A29F4-080B-4D76-95AA-12BAB4DA2C4C}">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\n_ggr_guitar_140bpm_4-4_41b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="727914184"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{41415978-395A-4C02-9F61-8B1C7E447C20}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{17AD5B5A-44CF-4CE9-90FB-D52D2044F58D}">
+											<ClipList>
+												<MusicClip Name="n_ggr_guitar_140bpm_4-4_41b" ID="{556FC0D5-A379-43D2-9376-295C0C67A941}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="70528.1666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="n_ggr_guitar_140bpm_4-4_41b" ID="{3F3A29F4-080B-4D76-95AA-12BAB4DA2C4C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="n_ggr_piano_140bpm_4-4_41b" ID="{10A6AEE8-4E70-4980-9A78-3DBBDEB4D669}" ShortID="270458574">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{AE2DDD28-C320-4301-BABF-F14390625660}" ShortID="194562802">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{275FC4DA-73ED-40B8-BDBD-36B69AF375DC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+											<ObjectRef Name="Special_Effect_1" ID="{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="n_ggr_piano_140bpm_4-4_41b" ID="{5E226A49-66B1-4A5C-A78C-1321784E3EDD}">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\n_ggr_piano_140bpm_4-4_41b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="475419321"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{8B720749-8D16-4E84-A427-3A21771BCA97}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{C71D58F5-75DB-43E1-915E-50088786A827}">
+											<ClipList>
+												<MusicClip Name="n_ggr_piano_140bpm_4-4_41b" ID="{7137D278-407A-417B-B0DB-68A8CC0F13A5}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="68571.4285714286"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="n_ggr_piano_140bpm_4-4_41b" ID="{5E226A49-66B1-4A5C-A78C-1321784E3EDD}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{A7C366E7-0167-4A28-80CB-936801277623}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>68.57143</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{6F88630E-E25A-4545-9DFF-1A3344A42ADE}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>68.57143</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{F14D5CD7-2CBC-40BE-94C5-D7B7FBD68A47}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>68.57143</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="n_ggr_violin2_140bpm_4-4_41b" ID="{B5397F7C-79E5-40E7-8626-399489A23391}" ShortID="680368804">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{D8D75D00-303E-400E-BD11-5CDEDFAD1A22}" ShortID="667352140">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{7BC90F69-F316-4BEE-B520-E0A2CCDC93EE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.98952879581152</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{3D3BA501-DE44-4C8A-8124-A3214695806C}" ShortID="415702878">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{16FB7568-2B9C-4086-B3DF-DD082C365722}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0.06182</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.97905759162304</XPos>
+																<YPos>0.0311786708392629</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>-6.99757</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="n_ggr_violin2_140bpm_4-4_41b" ID="{594B9255-F6C8-425B-8F61-AA75003B66D3}">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\n_ggr_violin2_140bpm_4-4_41b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="623389939"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{4F565CB2-FA88-4C6E-9BB9-4DDD8AAD78B2}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{13F5C2AC-ED20-46E8-A541-C9AB7185FDC7}">
+											<ClipList>
+												<MusicClip Name="n_ggr_violin2_140bpm_4-4_41b" ID="{72EBB320-F34F-4C2D-AF73-5A7DCB540B77}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="45000.2708333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="n_ggr_violin2_140bpm_4-4_41b" ID="{594B9255-F6C8-425B-8F61-AA75003B66D3}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="n_ggr_violin_140bpm_4-4_41b" ID="{43822E19-75A4-495E-8C53-5A9C3A04B00C}" ShortID="403783585">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{725897D0-B068-48F6-BE4C-B727846DDF1F}" ShortID="10425050">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3B3C799A-A1D0-44A9-8C11-2E9B02D5DB8D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0.0618199999999831</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.97905759162304</XPos>
+																<YPos>0.0311786708392674</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>-6.99757</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="n_ggr_violin_140bpm_4-4_41b" ID="{8AD5015C-4E9C-46C5-81E6-2B6AD385A163}">
+											<Language>SFX</Language>
+											<AudioFile>Bounced Files\n_ggr_violin_140bpm_4-4_41b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="984267069"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3E529651-8FE7-4CCB-B217-7156D39C7791}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{5D3A76CA-1BC7-443A-B7E9-0A33B83C1D71}">
+											<ClipList>
+												<MusicClip Name="n_ggr_violin_140bpm_4-4_41b" ID="{0E3EF1A2-F6D0-4804-A780-10F28EA41712}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="44996.5208333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="n_ggr_violin_140bpm_4-4_41b" ID="{8AD5015C-4E9C-46C5-81E6-2B6AD385A163}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{96EA7779-D62C-4DF9-93D0-5D059956D53A}"/>
+								<MusicCue Name="Exit Cue" ID="{BF266AEA-99F0-4EE4-BC5E-AFFA9B6255C4}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="68571.4285714286"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{0B97E254-6354-41A9-BB03-3C4E5C361A96}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{81D4A7A6-98BC-4C76-9098-C5D138FAB7CD}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{54D71FBB-43C3-46BE-BFA5-CB4651305100}" ShortID="499368915">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{9D23B533-0626-4C0C-809B-84560A31D104}" ShortID="215276911">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="MainTheme" ID="{21849AC7-2D5B-4FA2-8561-200E6B8DD66C}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

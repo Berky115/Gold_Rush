@@ -1,6 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1097980931	TestEvent			\Default Work Unit\TestEvent	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1614265074	Corruption			\Default Work Unit\Corruption	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2805769450	Special_Effect_1	Wwise Flanger			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	250837756	DoorKnock_1	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\DoorKnock_1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorKnock_1		92067
+	475419321	n_ggr_piano_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\Bounced Files\n_ggr_piano_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_piano_140bpm_4-4_41b		1784343
+	516548471	d_ggr_banjo_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\Bounced Files\d_ggr_banjo_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\d_ggr_banjo_140bpm_4-4_41b		536953
+	623389939	n_ggr_violin2_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\Bounced Files\n_ggr_violin2_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_violin2_140bpm_4-4_41b		283947
+	661022148	d_ggr_guitar_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\Bounced Files\d_ggr_guitar_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\d_ggr_guitar_140bpm_4-4_41b		1384039
+	689993042	d_ggr_ambience_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\Bounced Files\d_ggr_ambience_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\d_ggr_ambience_140bpm_4-4_41b		1007587
+	727914184	n_ggr_guitar_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\Bounced Files\n_ggr_guitar_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_guitar_140bpm_4-4_41b		1399004
+	749725875	n_ggr_bass_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\Bounced Files\n_ggr_bass_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_bass_140bpm_4-4_41b		676833
+	984267069	n_ggr_violin_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Mac\SFX\Bounced Files\n_ggr_violin_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_violin_140bpm_4-4_41b		540890
 

@@ -1612,6 +1612,39 @@
 								<Property Name="ModDepth" Type="Real32" Value="80"/>
 								<Property Name="ModFrequency" Type="Real32" Value="2"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="WetDryMix" Type="Real32">
+									<RTPCList>
+										<RTPC Name="" ID="{8913819D-B989-4243-B33E-DB3DC7DDC286}" ShortID="999145155">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Corruption" ID="{88904F12-845B-4788-AC4C-FFAA12D3FCBB}" WorkUnitID="{AE5CD040-BA6D-4092-8225-6D37D508E438}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{72D4F6C5-5778-4038-BCE9-F8925E1DAEED}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>3.44013</XPos>
+														<YPos>-100</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>5</XPos>
+														<YPos>-40.92527</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 						</Effect>
 						<Folder Name="Static Comb Filtering" ID="{6044FF31-2237-4EC5-B94F-9C0C25CFAC44}" ShortID="504290141">

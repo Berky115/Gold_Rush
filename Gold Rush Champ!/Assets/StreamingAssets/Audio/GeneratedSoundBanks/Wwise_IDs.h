@@ -13,8 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID TESTEVENT = 1097980931U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID CORRUPTION = 1614265074U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
