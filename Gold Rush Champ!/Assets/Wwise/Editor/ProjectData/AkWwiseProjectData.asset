@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 448c4e06348600409277981a20b660ca
     GuidInternal: 
-    m_lastTime: -8585896215889623838
+    m_lastTime: -8585895677555619984
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -149,7 +149,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 40d05cae6dba924082256d37d508e438
     GuidInternal: 
-    m_lastTime: -8585895717329716842
+    m_lastTime: -8585895677558951061
     List:
     - name: Corruption
       guid: 124f90885b848847ac4cffaa12d3fcbb
@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5870a35dd8b1d74a9571fe8246963073
     GuidInternal: 
-    m_lastTime: -8585896215889643856
+    m_lastTime: -8585895677555719715
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -178,7 +178,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 366f11a675ed4644993b277fff6762c3
     GuidInternal: 
-    m_lastTime: -8585896215889633844
+    m_lastTime: -8585895677555679824
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -188,7 +188,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2ca1f2690bf2d0448cd61c89b44c1c5f
     GuidInternal: 
-    m_lastTime: -8585896215889633844
+    m_lastTime: -8585895677555679824
     List: []
   ExpandedItems:
   - /Gold Rush Champ!_WwiseProject
