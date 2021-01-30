@@ -13,8 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
-        static const AkUniqueID TESTEVENT = 1097980931U;
+        static const AkUniqueID PLAY_WALKING = 1733885923U;
+        static const AkUniqueID STOP_WALKING = 165461773U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
@@ -32,6 +34,11 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID AMBIENCE = 85412153U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 1313398978}
   - component: {fileID: 1313398975}
   - component: {fileID: 1313398981}
+  - component: {fileID: 1313398982}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -486,3 +487,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9631e05c83ca40418f0d62fc191582e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1313398982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313398974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849d2a1d974ba1c4283fd9c4da4c9e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 110d579074453214b8b727ce5a6d41ab, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}

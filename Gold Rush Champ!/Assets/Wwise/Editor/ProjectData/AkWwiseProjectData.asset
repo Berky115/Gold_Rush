@@ -30,8 +30,19 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3768c276d5b11b458df4e2d9e9f5c1a3
     GuidInternal: 
-    m_lastTime: -8585896215889663874
+    m_lastTime: -8585895644888611184
     List:
+    - name: Ambience
+      guid: e71c3a2a4c1f994b8ddcb4dfc5d70468
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Ambience
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Ambience
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -49,7 +60,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2d01e44e75a9e64ba62822c013a4ca82
     GuidInternal: 
-    m_lastTime: -8585895717327384723
+    m_lastTime: -8585895643964737989
     List:
     - name: Main
       guid: bac8264ab69d954fb9479730d78285d7
@@ -68,8 +79,20 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d9120a16e6a86644a0c2bdc5a2a88fc6
     GuidInternal: 
-    m_lastTime: -8585895717329736856
+    m_lastTime: -8585895644325220260
     List:
+    - name: Play_Ambience
+      guid: 12075bb55754364c8dc26e1c503dae2f
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Music
       guid: 5c259c9afd81c34498864fe144c57243
       id: 2932040671
@@ -82,6 +105,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Walking
+      guid: 112a0a0806b1314ca52133c673d210fd
+      id: 1733885923
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Walking
+        ObjectType: 3
+      Path: Default Work Unit\Play_Walking
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Walking
+      guid: bb906e8137a45441b0f6df382d3a8f8c
+      id: 165461773
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Walking
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Walking
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: TestEvent
       guid: 358dd33fa85cdb4ea6e34be41849e642
       id: 1097980931
@@ -143,6 +190,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585896215889633844
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Gold Rush Champ!_WwiseProject
+  - /Gold Rush Champ!_WwiseProject/Events
+  - /Gold Rush Champ!_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

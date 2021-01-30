@@ -11,16 +11,35 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4276098158">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4234294811">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience"/>
+			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2182326840">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1300970285">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="84834525" Language="SFX">
+							<ShortName>WHGA4 - AmbientBirds.wav</ShortName>
+							<Path>SFX\WHGA4 - AmbientBirds_C79445FA.wem</Path>
+						</File>
+						<File Id="255187284" Language="SFX">
+							<ShortName>WHGA4 - AmbientBirds.wav</ShortName>
+							<Path>SFX\WHGA4 - AmbientBirds_536B52AD.wem</Path>
+						</File>
+						<File Id="806782554" Language="SFX">
+							<ShortName>459407__pfannkuchn__small-river-1-fast-close.wav</ShortName>
+							<Path>SFX\459407__pfannkuchn__small-river-1-fast-close_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="475419321" Language="SFX">
@@ -57,14 +76,54 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1097980931" Name="TestEvent" ObjectPath="\Events\Default Work Unit\TestEvent" DurationType="OneShot" DurationMin="9.244208" DurationMax="9.244208">
+				<Event Id="1733885923" Name="Play_Walking" ObjectPath="\Events\Default Work Unit\Play_Walking" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="250837756" Language="SFX">
-							<ShortName>DoorKnock_1.wav</ShortName>
-							<Path>SFX\DoorKnock_1_3F75BDB9.wem</Path>
+						<File Id="29897674" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_92680FC7.wem</Path>
+						</File>
+						<File Id="109660841" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_28830E72.wem</Path>
+						</File>
+						<File Id="261678665" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_F475E065.wem</Path>
+						</File>
+						<File Id="313607291" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_C881B5A5.wem</Path>
+						</File>
+						<File Id="401454594" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_5E516783.wem</Path>
+						</File>
+						<File Id="637512831" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_6E39310E.wem</Path>
+						</File>
+						<File Id="763419279" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_43762AFE.wem</Path>
+						</File>
+						<File Id="784994383" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_2A3ECAFD.wem</Path>
+						</File>
+						<File Id="984521360" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_C8844276.wem</Path>
+						</File>
+						<File Id="1008248043" Language="SFX">
+							<ShortName>water_walking.wav</ShortName>
+							<Path>SFX\water_walking_7B6672E7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience"/>
+					</AuxBusSends>
 				</Event>
+				<Event Id="165461773" Name="Stop_Walking" ObjectPath="\Events\Default Work Unit\Stop_Walking" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1614265074" Name="Corruption" ObjectPath="\Game Parameters\Default Work Unit\Corruption"/>

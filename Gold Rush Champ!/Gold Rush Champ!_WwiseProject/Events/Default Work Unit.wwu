@@ -25,6 +25,44 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Ambience" ID="{B55B0712-5457-4C36-8DC2-6E1C503DAE2F}">
+					<ChildrenList>
+						<Action Name="" ID="{484AD773-00E1-46F0-B85C-180280263B5E}" ShortID="354891447">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{A90B7021-DC02-4EC2-9A09-FA3421275D1E}" WorkUnitID="{788745B1-6E7E-47CF-8025-D9AB73C93F10}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Walking" ID="{080A2A11-B106-4C31-A521-33C673D210FD}">
+					<ChildrenList>
+						<Action Name="" ID="{D6F51AEE-8F66-49A2-A4D0-FB4AC75C7FF7}" ShortID="1058090170">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Walking" ID="{9B9FFF35-395B-49D6-BF24-10A72FBB2F93}" WorkUnitID="{788745B1-6E7E-47CF-8025-D9AB73C93F10}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Walking" ID="{816E90BB-A437-4154-B0F6-DF382D3A8F8C}">
+					<ChildrenList>
+						<Action Name="" ID="{BB4C89BB-DC76-45D9-8A72-830A28B5C567}" ShortID="1040810359">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Walking" ID="{9B9FFF35-395B-49D6-BF24-10A72FBB2F93}" WorkUnitID="{788745B1-6E7E-47CF-8025-D9AB73C93F10}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
