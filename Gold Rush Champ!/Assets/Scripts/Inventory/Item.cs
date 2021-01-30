@@ -13,6 +13,6 @@ public class Item : ScriptableObject
     public string Description;
 
     public bool RepeatIfThrownOut;
-
+    public bool IsCursed;
 
 }

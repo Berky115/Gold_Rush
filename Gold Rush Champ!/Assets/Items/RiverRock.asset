@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: RiverRock
   m_EditorClassIdentifier: 
   Name: River Rock
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: 17e553777fcaf8b42840ac7704562e23, type: 3}
   Description: A smooth river rock of little value.
+  RepeatIfThrownOut: 0
+  IsCursed: 0
