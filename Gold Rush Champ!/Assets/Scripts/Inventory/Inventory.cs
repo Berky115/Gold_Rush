@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
 
-    public Item[] CreateTest;
+    //public Item[] CreateTest;
 
     //Item Lists
     public List<Item> FoundItems;

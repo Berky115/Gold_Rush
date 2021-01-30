@@ -12,4 +12,7 @@ public class Item : ScriptableObject
     [TextArea]
     public string Description;
 
+    public bool RepeatIfThrownOut;
+
+
 }
