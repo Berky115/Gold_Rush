@@ -163,10 +163,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1981283149}
     m_Modifications:
-    - target: {fileID: 295098953142667329, guid: ffd1b9a5ffe87a044a0b96ceca6a518e, type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5156408859311755353, guid: ffd1b9a5ffe87a044a0b96ceca6a518e, type: 3}
       propertyPath: m_Name
       value: Wall
@@ -559,6 +555,7 @@ GameObject:
   - component: {fileID: 1470887947}
   - component: {fileID: 1470887946}
   - component: {fileID: 1470887945}
+  - component: {fileID: 1470887948}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -665,6 +662,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1470887948
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470887943}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1 &1861546807
 GameObject:
   m_ObjectHideFlags: 0
