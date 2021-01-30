@@ -27,8 +27,7 @@ public class ItemSpawning : MonoBehaviour
         isRunning = false;
         yield return new WaitForSeconds(delay);
         Debug.Log("NEW OBJECT GENERATED");
-        Random.InitState(Random.Range(-3, 3)); //This is the seed
-        Instantiate(riverItem, new Vector3(Random.Range(-3, 3), 0, 0), Quaternion.identity);
+        Instantiate(riverItem, new Vector3(Random.Range(-5, 5), 2, 0), Quaternion.identity);
         isRunning = true;
     }
     
