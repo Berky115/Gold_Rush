@@ -23,5 +23,18 @@ public class CorruptionLevel : MonoBehaviour
                 print("Stage" + currentLevel);
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        {
+            AkSoundEngine.PostEvent("Play_Walking", gameObject);
+        }
+
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            if (!Input.GetKey(KeyCode.A) || !Input.GetKey(KeyCode.D))
+            {
+                AkSoundEngine.PostEvent("Stop_Walking", gameObject);
+            }
+        }
     }
 }
