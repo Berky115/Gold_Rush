@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollideWithPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
+
     void Start()
     {
         
@@ -22,6 +23,10 @@ public class CollideWithPlayer : MonoBehaviour
         if(col.gameObject.tag == "Player") {
             Debug.Log("GameObject1 collided with " + col.name);
             Debug.Log(gameObject.GetComponentInParent<ObjectInfo>().data.Description);
+            GameObject.Find("ItemManager").GetComponent<ItemTracking>().foundList.Add(gameObject.GetComponentInParent<ObjectInfo>().data);
+            if(gameObject.GetComponentInParent<ObjectInfo>().data.RepeatIfThrownOut){
+                //stubbed out for conditional
+            }
             Destroy(gameObject);
         }
 
