@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ItemSpawning : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    
 
     public int delay = 1;
     public float CreepyLevel = 1;
@@ -12,6 +15,7 @@ public class ItemSpawning : MonoBehaviour
     public GameObject riverItem;
     public List<Item> ItemList;
     public bool isRunning = true;
+    public UnityEvent StartFinalBattle;
     void Start()
     {
 
@@ -45,6 +49,10 @@ public class ItemSpawning : MonoBehaviour
     public void checkCreepyLevel(){
         if(CreepyLevel > creepThreshold){
             Debug.Log("Time to transition to the final battle!");
+
+            if (StartFinalBattle != null) {
+                StartFinalBattle.Invoke();
+            }
         }
     }
     

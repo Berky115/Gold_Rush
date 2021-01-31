@@ -7,10 +7,7 @@ public class Inventory : MonoBehaviour
 
     //Item Lists
     private List<Item> FoundItems;
-    //private List<Item> ThrownAwayItems;
     // private List<Item> KeptItems;
-    //public List<Item> FoundItems;
-    //public List<Item> ThrownAwayItems;
     public List<Item> KeptItems;
 
     private ItemPileManager itemPile;
@@ -28,11 +25,6 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    //public void ThrowOut(Item thrownOutItem)
-    //{
-    //    ThrownAwayItems.Add(thrownOutItem);
-    //}
-
     public void KeepItem(Item keepItem)
     {
         KeptItems.Add(keepItem);
@@ -44,12 +36,15 @@ public class Inventory : MonoBehaviour
         return KeptItems;
     }
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     private void Start()
     {
         FoundItems = new List<Item>();
         KeptItems = new List<Item>();
-        //ThrownAwayItems = new List<Item>();
 
         itemPile = GetComponent<ItemPileManager>();
     }
@@ -70,6 +65,8 @@ public class Inventory : MonoBehaviour
     //        }
     //    }
     //}
+
+    
 
 
 }

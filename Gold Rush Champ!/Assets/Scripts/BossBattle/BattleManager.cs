@@ -29,10 +29,27 @@ public class BattleManager : MonoBehaviour
     public AttackInfoUI AttackUI;
     public PlayerActionUI messagePlayerUI;
 
+    public GameObject[] HideOnStart;
+    public GameObject[] ShowOnStart;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        BattleSetUp();
+    }
+
+    private void BattleSetUp()
+    {
+        ////Hide Objects\
+        //foreach(GameObject hideObject in HideOnStart)
+        //{
+        //    hideObject.SetActive(false);
+        //}
+
+        ////Show Objects
+        //foreach (GameObject showObject in ShowOnStart)
+        //{
+        //    showObject.SetActive(true);
+        //}
 
         //Set up UI Visibility
         FightStart.SetActive(true);
@@ -40,19 +57,21 @@ public class BattleManager : MonoBehaviour
         PlayerAttack.SetActive(false);
         DeathScreen.SetActive(false);
         PlayerChoiceMenu.SetActive(false);
-        
+
         //Set Health Bars
         PlayerHealthBar.SetMaxHealth(PlayerHealth);
         BossHealthBar.SetMaxHealth(BossHealth);
     }
 
-    public void StartBattle()
+    public void PressGo()
     {
+        TheInventory = GameObject.Find("Inventory").GetComponent<Inventory>();
+
+
         TheInventory.ReloadPile();
 
-
         FinalBossList = TheInventory.GetKeptItems();
-        if(FinalBossList.Count == 0)
+        if (FinalBossList.Count == 0)
         {
             Debug.Log("Error: Battle Manager has no list of kept items");
         }
