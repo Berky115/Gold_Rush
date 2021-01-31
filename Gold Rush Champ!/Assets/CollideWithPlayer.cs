@@ -28,7 +28,7 @@ public class CollideWithPlayer : MonoBehaviour
                 //stubbed out for conditional
                 GameObject.Find("ItemManager").GetComponent<ItemSpawning>().ItemList.Remove(gameObject.GetComponentInParent<ObjectInfo>().data);
             }
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
             //appending item menu pop-up
             Sprite itemSprite = gameObject.GetComponentInParent<ObjectInfo>().data.ItemImage;
             string itemName = gameObject.GetComponentInParent<ObjectInfo>().data.Name;
