@@ -29,6 +29,11 @@ public class CollideWithPlayer : MonoBehaviour
                 GameObject.Find("ItemManager").GetComponent<ItemSpawning>().ItemList.Remove(gameObject.GetComponentInParent<ObjectInfo>().data);
             }
             Destroy(gameObject);
+            //appending item menu pop-up
+            Sprite itemSprite = gameObject.GetComponentInParent<ObjectInfo>().data.ItemImage;
+            string itemName = gameObject.GetComponentInParent<ObjectInfo>().data.Name;
+            string itemDesc = gameObject.GetComponentInParent<ObjectInfo>().data.Description;
+            ItemDescriptionPage.ShowItem_Static(itemSprite, itemName, itemDesc);
         }
 
     }
