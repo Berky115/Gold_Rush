@@ -24,8 +24,9 @@ public class CollideWithPlayer : MonoBehaviour
             Debug.Log("GameObject1 collided with " + col.name);
             Debug.Log(gameObject.GetComponentInParent<ObjectInfo>().data.Description);
             GameObject.Find("ItemManager").GetComponent<ItemTracking>().foundList.Add(gameObject.GetComponentInParent<ObjectInfo>().data);
-            if(gameObject.GetComponentInParent<ObjectInfo>().data.RepeatIfThrownOut){
+            if(!gameObject.GetComponentInParent<ObjectInfo>().data.RepeatIfThrownOut){
                 //stubbed out for conditional
+                GameObject.Find("ItemManager").GetComponent<ItemSpawning>().ItemList.Remove(gameObject.GetComponentInParent<ObjectInfo>().data);
             }
             Destroy(gameObject);
         }
