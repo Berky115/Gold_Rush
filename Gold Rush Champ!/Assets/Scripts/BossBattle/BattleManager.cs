@@ -36,15 +36,16 @@ public class BattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isPlayerTurn = false;
-        TheInventory.ReloadPile();
+        //isPlayerTurn = false;
+
+        //Set up UI Visibility
         FightStart.SetActive(true);
         BossAttack.SetActive(false);
         PlayerAttack.SetActive(false);
         DeathScreen.SetActive(false);
         PlayerChoiceMenu.SetActive(false);
-
-
+        
+        //Set Health Bars
         PlayerHealthBar.SetMaxHealth(PlayerHealth);
         BossHealthBar.SetMaxHealth(BossHealth);
     }
@@ -84,6 +85,16 @@ public class BattleManager : MonoBehaviour
 
     public void StartBattle()
     {
+        TheInventory.ReloadPile();
+
+
+        FinalBossList = TheInventory.GetKeptItems();
+        if(FinalBossList.Count == 0)
+        {
+            Debug.Log("Error: Battle Manager has no list of kept items");
+        }
+
+
         //Hide Start menu
         FightStart.SetActive(false);
 
@@ -130,7 +141,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(2);
 
 
-        isPlayerTurn = false;
+        //isPlayerTurn = false;
         playerLastAction = PlayerAction.None;
         playerHasActed = false;
     }
@@ -169,7 +180,7 @@ public class BattleManager : MonoBehaviour
 
         //NEXT TURN SET UP
 
-        isPlayerTurn = true;
+        //isPlayerTurn = true;
         currentCollectionIndex++;
         if(currentCollectionIndex >= FinalBossList.Count)
         {

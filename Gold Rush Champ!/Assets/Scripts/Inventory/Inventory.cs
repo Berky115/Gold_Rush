@@ -39,6 +39,11 @@ public class Inventory : MonoBehaviour
         itemPile.UpdateModeSprites(KeptItems);
     }
 
+    public List<Item> GetKeptItems()
+    {
+        return KeptItems;
+    }
+
 
     private void Start()
     {
