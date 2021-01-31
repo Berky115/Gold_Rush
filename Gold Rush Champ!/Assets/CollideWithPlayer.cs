@@ -21,6 +21,7 @@ public class CollideWithPlayer : MonoBehaviour
     {
         if(col.gameObject.tag == "Player") {
             Debug.Log("GameObject1 collided with " + col.name);
+            Debug.Log(gameObject.GetComponentInParent<ObjectInfo>().data.Description);
             Destroy(gameObject);
         }
 
