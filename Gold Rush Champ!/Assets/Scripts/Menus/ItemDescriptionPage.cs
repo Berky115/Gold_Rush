@@ -9,7 +9,7 @@ public class ItemDescriptionPage : MonoBehaviour
     private Image image;
     private Text nameText;
     private Text descriptionText;
-
+    public Item data;
 
     //sets initial variables
     private void Awake()
@@ -22,12 +22,13 @@ public class ItemDescriptionPage : MonoBehaviour
     }
 
     //sets the item info to be displayed
-    private void ShowItemInfo(Sprite itemSprite, string itemName, string itemDesc)
+    private void ShowItemInfo(Sprite itemSprite, string itemName, string itemDesc, Item itemData)
     {
         gameObject.SetActive(true);
         image.sprite = itemSprite;
         nameText.text = itemName.ToString();
         descriptionText.text = itemDesc.ToString();
+        data = itemData;
         PauseControl.Pause();
     }
     
@@ -39,9 +40,14 @@ public class ItemDescriptionPage : MonoBehaviour
     }
 
     //static function for reference elsewhere
-    public static void ShowItem_Static(Sprite itemSprite, string itemName, string itemDesc)
+    public static void ShowItem_Static(Sprite itemSprite, string itemName, string itemDesc, Item data)
     {
-        instance.ShowItemInfo(itemSprite, itemName, itemDesc);
+        instance.ShowItemInfo(itemSprite, itemName, itemDesc, data);
+    }
+
+    public void sendItemToFoundList() {
+        GameObject.Find("ItemManager").GetComponent<ItemTracking>().foundList.Add(data);
+        GameObject.Find("ItemManager").GetComponent<ItemSpawning>().CreepyLevel += .25f;
     }
 
     public static void HideItem_Static()

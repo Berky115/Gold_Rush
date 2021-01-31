@@ -12,4 +12,9 @@ public class ItemTracking : MonoBehaviour
         
     }
 
+    public void addFoundItem(string message) {
+        // foundList.Add(item);
+        Debug.Log(message);
+    }
+
 }

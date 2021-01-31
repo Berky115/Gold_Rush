@@ -23,17 +23,17 @@ public class CollideWithPlayer : MonoBehaviour
         if(col.gameObject.tag == "Player") {
             Debug.Log("GameObject1 collided with " + col.name);
             Debug.Log(gameObject.GetComponentInParent<ObjectInfo>().data.Description);
-            GameObject.Find("ItemManager").GetComponent<ItemTracking>().foundList.Add(gameObject.GetComponentInParent<ObjectInfo>().data);
+            // GameObject.Find("ItemManager").GetComponent<ItemTracking>().foundList.Add(gameObject.GetComponentInParent<ObjectInfo>().data);
             if(!gameObject.GetComponentInParent<ObjectInfo>().data.RepeatIfThrownOut){
-                //stubbed out for conditional
                 GameObject.Find("ItemManager").GetComponent<ItemSpawning>().ItemList.Remove(gameObject.GetComponentInParent<ObjectInfo>().data);
             }
             Destroy(transform.parent.gameObject);
             //appending item menu pop-up
             Sprite itemSprite = gameObject.GetComponentInParent<ObjectInfo>().data.ItemImage;
+            Item data = gameObject.GetComponentInParent<ObjectInfo>().data;
             string itemName = gameObject.GetComponentInParent<ObjectInfo>().data.Name;
             string itemDesc = gameObject.GetComponentInParent<ObjectInfo>().data.Description;
-            ItemDescriptionPage.ShowItem_Static(itemSprite, itemName, itemDesc);
+            ItemDescriptionPage.ShowItem_Static(itemSprite, itemName, itemDesc, data);
         }
 
     }
