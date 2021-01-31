@@ -16,10 +16,8 @@ public class destroyOnTouch : MonoBehaviour
         
     }
 
-    
     void OnTriggerEnter2D(Collider2D col)
     {   
             Destroy(col.transform.parent.gameObject);
-
     }
 }
