@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: Femur
   m_EditorClassIdentifier: 
-  Name: 
+  Name: A Femur
   ItemImage: {fileID: 0}
-  Description: 
+  Description: The femur or thigh bone, is the proximal bone of the hindlimb in tetrapod
+    vertebrate, the largest bone of the human body.
   RepeatIfThrownOut: 0
   IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
-  AttackDamage: 0
+  CreepyRank: 3
+  AttackText: Watch out bonehead!
+  AttackDamage: 10

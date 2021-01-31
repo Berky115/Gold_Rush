@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: Helix_Fossil
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Helix Fossil
   ItemImage: {fileID: 0}
-  Description: 
+  Description: Praise lord Helix!
   RepeatIfThrownOut: 0
   IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
+  CreepyRank: 2
+  AttackText: Lord Helix would never harm you
   AttackDamage: 0

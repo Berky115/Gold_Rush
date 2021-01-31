@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: Tentacle
   m_EditorClassIdentifier: 
-  Name: 
+  Name: A Tentacle
   ItemImage: {fileID: 0}
-  Description: 
+  Description: A tentacle is a flexible, mobile, elongated organ present in some
+    species of animals, most of them invertebrates. This one seems quite attatched
+    to you!
   RepeatIfThrownOut: 0
-  IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
-  AttackDamage: 0
+  IsCursed: 1
+  CreepyRank: 2
+  AttackText: NANI!?!!?
+  AttackDamage: 5

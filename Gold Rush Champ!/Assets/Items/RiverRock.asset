@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: River Rock
   ItemImage: {fileID: 21300000, guid: 17e553777fcaf8b42840ac7704562e23, type: 3}
-  Description: A smooth river rock of little value.
+  Description: River rocks are most often found on beaches and in stream beds. They
+    come in a range of sizes, colors and textures.
   RepeatIfThrownOut: 1
   IsCursed: 0
   CreepyRank: 1
-  AttackText: 
-  AttackDamage: 0
+  AttackText: The innocent rock is hurled at you with startling force
+  AttackDamage: 10

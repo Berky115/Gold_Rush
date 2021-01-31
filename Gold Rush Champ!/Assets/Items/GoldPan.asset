@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
-  m_Name: Item
+  m_Name: GoldPan
   m_EditorClassIdentifier: 
-  Name: 
+  Name: A Gold Pan
   ItemImage: {fileID: 0}
-  Description: 
+  Description: A sifting pan identical to the one you are using.  Someone must have
+    dropped this.
   RepeatIfThrownOut: 0
   IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
+  CreepyRank: 1
+  AttackText: This pan and your pan cancel each other out.  You see a diferent place,
+    another you.
   AttackDamage: 0

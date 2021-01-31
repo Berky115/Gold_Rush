@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: Message_in_a_bottle_3
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Message in a Bottle
   ItemImage: {fileID: 0}
-  Description: 
+  Description: It's a message in a bottle! This one reads 'It is happening again...It
+    is happening again...It is happening again'
   RepeatIfThrownOut: 0
   IsCursed: 0
-  CreepyRank: 0
+  CreepyRank: 3
   AttackText: 
   AttackDamage: 0

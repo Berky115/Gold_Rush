@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
-  m_Name: Item
+  m_Name: Message_in_a_bottle_5
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Message in a Bottle
   ItemImage: {fileID: 0}
-  Description: 
+  Description: It's a message in a bottle! This one reads...'A carton of Eggs. A
+    quart of Milk. A stick of Butter.'
   RepeatIfThrownOut: 0
   IsCursed: 0
-  CreepyRank: 0
+  CreepyRank: 1
   AttackText: 
   AttackDamage: 0

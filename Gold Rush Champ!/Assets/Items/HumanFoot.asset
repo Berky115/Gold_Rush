@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: HumanFoot
   m_EditorClassIdentifier: 
-  Name: A human foot
+  Name: A Human Foot
   ItemImage: {fileID: 0}
-  Description: Oh snap it's a human food! DAYUM!
-  RepeatIfThrownOut: 0
-  IsCursed: 1
-  CreepyRank: 5
-  AttackText: watch out!
-  AttackDamage: 0
+  Description: The human foot has 26 bones and is used to help balance the body.
+    However, this one is unable to do so right now...
+  RepeatIfThrownOut: 1
+  IsCursed: 0
+  CreepyRank: 4
+  AttackText: Kick attack!
+  AttackDamage: 20

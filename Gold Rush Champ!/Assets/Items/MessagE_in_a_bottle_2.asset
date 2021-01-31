@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: MessagE_in_a_bottle_2
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Message in a Bottle
   ItemImage: {fileID: 0}
-  Description: 
+  Description: It's a message in a bottle! This one reads...'Hey love! Can't wait
+    to see you again! Meet you by the river like before!
   RepeatIfThrownOut: 0
   IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
+  CreepyRank: 1
+  AttackText: N/A
   AttackDamage: 0

@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: DenimPatch
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Denim Patch
   ItemImage: {fileID: 0}
-  Description: 
-  RepeatIfThrownOut: 0
+  Description: This sturdy fabrix probably came from a tent.  Or maybe some miner's
+    clothes.
+  RepeatIfThrownOut: 1
   IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
-  AttackDamage: 0
+  CreepyRank: 1
+  AttackText: The patch uses Fashion Victim!
+  AttackDamage: 5

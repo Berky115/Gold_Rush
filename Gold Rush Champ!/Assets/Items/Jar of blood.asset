@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Jar of Blood
   ItemImage: {fileID: 0}
-  Description: It's a big scary jar of blood!
-  RepeatIfThrownOut: 0
+  Description: Looks to be type B negative. One of the rarest in the U.S! Not quite
+    gold, but valued none the less!
+  RepeatIfThrownOut: 1
   IsCursed: 0
   CreepyRank: 3
-  AttackText: 
-  AttackDamage: 0
+  AttackText: The blood helps! Are you B-?
+  AttackDamage: -10
