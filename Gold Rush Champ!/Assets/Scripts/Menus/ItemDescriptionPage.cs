@@ -28,14 +28,14 @@ public class ItemDescriptionPage : MonoBehaviour
         image.sprite = itemSprite;
         nameText.text = itemName.ToString();
         descriptionText.text = itemDesc.ToString();
-        //PauseControl.Pause();
+        PauseControl.Pause();
     }
     
     //closes window
     private void HideItemInfo()
     {
         gameObject.SetActive(false);
-        //PauseControl.Resume();
+        PauseControl.Resume();
     }
 
     //static function for reference elsewhere
