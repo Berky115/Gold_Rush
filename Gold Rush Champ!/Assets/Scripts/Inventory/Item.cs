@@ -15,4 +15,7 @@ public class Item : ScriptableObject
     public bool RepeatIfThrownOut;
     public bool IsCursed;
 
+    [TextArea(1, 5)]
+    public string AttackText;
+    public int AttackDamage = 0;
 }

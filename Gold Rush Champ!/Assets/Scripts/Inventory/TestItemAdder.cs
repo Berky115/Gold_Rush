@@ -43,8 +43,8 @@ public class TestItemAdder : MonoBehaviour
         {
             if (itemIndex < FoundItemsList.Length-1)
             {
-                //THROGH AWAY
-                inventory.ThrowOut(FoundItemsList[itemIndex]);
+                //THROW AWAY
+                //inventory.ThrowOut(FoundItemsList[itemIndex]);
 
                 itemIndex++;
                 Debug.Log("The Item: " + FoundItemsList[itemIndex].Name + " was Thrown Away");

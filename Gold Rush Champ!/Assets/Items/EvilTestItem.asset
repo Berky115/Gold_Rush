@@ -17,3 +17,5 @@ MonoBehaviour:
   Description: Such evil!
   RepeatIfThrownOut: 1
   IsCursed: 1
+  AttackText: The evil attacks
+  AttackDamage: 20

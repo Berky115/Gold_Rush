@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour
 
     //Item Lists
     private List<Item> FoundItems;
-    private List<Item> ThrownAwayItems;
+    //private List<Item> ThrownAwayItems;
     private List<Item> KeptItems;
     //public List<Item> FoundItems;
     //public List<Item> ThrownAwayItems;
@@ -28,10 +28,10 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void ThrowOut(Item thrownOutItem)
-    {
-        ThrownAwayItems.Add(thrownOutItem);
-    }
+    //public void ThrowOut(Item thrownOutItem)
+    //{
+    //    ThrownAwayItems.Add(thrownOutItem);
+    //}
 
     public void KeepItem(Item keepItem)
     {
@@ -42,14 +42,16 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        //Testing
-        //FoundItems.Add(CreateTest);
-        //FoundItems.Add(CreateTest);
         FoundItems = new List<Item>();
         KeptItems = new List<Item>();
-        ThrownAwayItems = new List<Item>();
+        //ThrownAwayItems = new List<Item>();
 
         itemPile = GetComponent<ItemPileManager>();
+    }
+
+    public void ReloadPile()
+    {
+        itemPile.UpdateModeSprites(KeptItems);
     }
 
     //private void Update()
