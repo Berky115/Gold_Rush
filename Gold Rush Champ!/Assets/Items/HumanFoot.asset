@@ -17,6 +17,6 @@ MonoBehaviour:
   Description: Oh snap it's a human food! DAYUM!
   RepeatIfThrownOut: 0
   IsCursed: 1
-  CreepyRank: 0
+  CreepyRank: 5
   AttackText: watch out!
   AttackDamage: 0

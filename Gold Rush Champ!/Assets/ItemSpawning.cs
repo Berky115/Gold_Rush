@@ -40,8 +40,10 @@ public class ItemSpawning : MonoBehaviour
         spawnedItem.GetComponent<ObjectInfo>().data = ItemList[index];
         Debug.Log("Creepy Level at " + CreepyLevel);
         isRunning = true;
+    }
+
+    public void checkCreepyLevel(){
         if(CreepyLevel > creepThreshold){
-            //This check may need to be done in the pop up after the user reads what happened.
             Debug.Log("Time to transition to the final battle!");
         }
     }

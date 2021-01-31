@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: EvilTestItem
   m_EditorClassIdentifier: 
-  Name: A CURSED OBJECT!
+  Name: Cursed item!!
   ItemImage: {fileID: 21300000, guid: 8278c9497e2f02946bc4353148725cb1, type: 3}
-  Description: Such evil!
+  Description: ITS SO DANG EVIL!
   RepeatIfThrownOut: 1
   IsCursed: 1
+  CreepyRank: 4
   AttackText: The evil attacks
   AttackDamage: 20

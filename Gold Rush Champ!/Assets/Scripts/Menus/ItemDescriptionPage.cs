@@ -46,8 +46,9 @@ public class ItemDescriptionPage : MonoBehaviour
     }
 
     public void sendItemToFoundList() {
-        GameObject.Find("ItemManager").GetComponent<ItemTracking>().foundList.Add(data);
+        GameObject.Find("Inventory").GetComponent<Inventory>().KeepItem(data);
         GameObject.Find("ItemManager").GetComponent<ItemSpawning>().CreepyLevel += .25f;
+        GameObject.Find("ItemManager").GetComponent<ItemSpawning>().checkCreepyLevel();
     }
 
     public static void HideItem_Static()
