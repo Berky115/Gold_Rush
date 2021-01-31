@@ -6,15 +6,11 @@ public class BattleManager : MonoBehaviour
 {
     public enum PlayerAction { None, PanAttack, Run };
 
-    PlayerAction playerLastAction;
-    bool isPlayerTurn = false;
-    bool playerHasActed = false;
+    PlayerAction playerNextAction;
     string playerActionText = "";
-
 
     public List<Item> FinalBossList;
     int currentCollectionIndex = 0;
-    bool collectionHasActed = false;
 
     public int PlayerHealth = 100;
     public int BossHealth = 100;
@@ -31,12 +27,12 @@ public class BattleManager : MonoBehaviour
     public Health BossHealthBar;
 
     public AttackInfoUI AttackUI;
+    public PlayerActionUI messagePlayerUI;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //isPlayerTurn = false;
 
         //Set up UI Visibility
         FightStart.SetActive(true);
@@ -49,39 +45,6 @@ public class BattleManager : MonoBehaviour
         PlayerHealthBar.SetMaxHealth(PlayerHealth);
         BossHealthBar.SetMaxHealth(BossHealth);
     }
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //    //if(PlayerHealth <= 0)
-    //    //{
-    //    //    //Launch End State
-    //    //    return;
-    //    //}
-
-    //    //if(isPlayerTurn == false)
-    //    //{
-    //    //    ////The Collection's Turn
-    //    //    //if (collectionHasActed)
-    //    //    //{
-    //    //    //    BossAttacks();
-    //    //    //}
-
-
-    //    //}
-    //    //else
-    //    //{
-    //    //    //The Player's turn
-    //    //    if (playerLastAction != PlayerAction.None)
-    //    //    {
-    //    //        //if (playerHasActed)
-    //    //        //{
-    //    //        //    //DoPlayerAction();
-    //    //        //}
-    //    //    }
-    //    //}
-    //}
 
     public void StartBattle()
     {
@@ -129,37 +92,27 @@ public class BattleManager : MonoBehaviour
         PlayerChoiceMenu.SetActive(true);
 
         //Wait for input
-        while (playerLastAction == PlayerAction.None)
+        while (playerNextAction == PlayerAction.None)
         {
             yield return null;
         }
 
         PlayerChoiceMenu.SetActive(false);
 
+        PlayerAttack.SetActive(true);
+        messagePlayerUI.DisplayText("Title", playerActionText);
         Debug.Log(playerActionText);
 
         yield return new WaitForSeconds(2);
 
 
-        //isPlayerTurn = false;
-        playerLastAction = PlayerAction.None;
-        playerHasActed = false;
+        PlayerAttack.SetActive(false);
+        playerNextAction = PlayerAction.None;
     }
 
     public IEnumerator BossAttacks()
     {
         Item attackerItem = FinalBossList[currentCollectionIndex];
-
-        //show dialogue
-        //bool hasInput = false;
-        //while (!hasInput)
-        //{
-        //    if (Input.GetKeyUp(KeyCode.Space))
-        //    {
-
-        //    }
-        //    yield return null;
-        //}
 
         //ATTACK TEXT
 
@@ -179,25 +132,22 @@ public class BattleManager : MonoBehaviour
 
 
         //NEXT TURN SET UP
-
-        //isPlayerTurn = true;
         currentCollectionIndex++;
         if(currentCollectionIndex >= FinalBossList.Count)
         {
             currentCollectionIndex = 0;
         }
-        collectionHasActed = false;
     }
 
     public void PickPlayerAction(PlayerAction action)
     {
-        playerLastAction = action;
+        playerNextAction = action;
     }
 
     #region Player Actions
     public void PlayerRun()
     {
-        playerLastAction = PlayerAction.Run;
+        playerNextAction = PlayerAction.Run;
         playerActionText = "There is no escape.";
 
         //IEnumerator coroutine = DoPlayerAction("You attack with your pan.  It does nothing against the monster.");
@@ -206,7 +156,7 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerPanAttack()
     {
-        playerLastAction = PlayerAction.PanAttack;
+        playerNextAction = PlayerAction.PanAttack;
         playerActionText = "You attack with your pan.It does nothing against the monster.";
 
         //IEnumerator coroutine = DoPlayerAction("There is no escape.");
