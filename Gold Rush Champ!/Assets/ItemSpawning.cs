@@ -36,8 +36,8 @@ public class ItemSpawning : MonoBehaviour
             index = Random.Range(0, ItemList.Count);
         }
         Debug.Log(ItemList[index].name);
+        CreepyLevel += .1f;
         spawnedItem.GetComponent<ObjectInfo>().data = ItemList[index];
-        CreepyLevel += .25f;
         Debug.Log("Creepy Level at " + CreepyLevel);
         isRunning = true;
         if(CreepyLevel > creepThreshold){
