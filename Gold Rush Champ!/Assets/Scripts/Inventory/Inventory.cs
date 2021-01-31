@@ -8,10 +8,10 @@ public class Inventory : MonoBehaviour
     //Item Lists
     private List<Item> FoundItems;
     //private List<Item> ThrownAwayItems;
-    private List<Item> KeptItems;
+    // private List<Item> KeptItems;
     //public List<Item> FoundItems;
     //public List<Item> ThrownAwayItems;
-    //public List<Item> KeptItems;
+    public List<Item> KeptItems;
 
     private ItemPileManager itemPile;
 
