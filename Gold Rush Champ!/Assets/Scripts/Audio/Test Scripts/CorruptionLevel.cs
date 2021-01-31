@@ -6,6 +6,7 @@ public class CorruptionLevel : MonoBehaviour
 {
     float currentLevel = 1;
     bool mainTheme = true;
+    int itemGetCategory = 1;
     
     void Update()
     {
@@ -51,6 +52,28 @@ public class CorruptionLevel : MonoBehaviour
                 AkSoundEngine.PostEvent("Stop_MainMenuMusic", gameObject);
                 AkSoundEngine.PostEvent("Play_Music", gameObject);
                 mainTheme = true;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if(itemGetCategory == 1)
+            {
+                AkSoundEngine.SetState("ItemType", "Normal");
+                AkSoundEngine.PostEvent("Play_ItemGet", gameObject);
+                itemGetCategory++;
+            }
+            else if(itemGetCategory == 2)
+            {
+                AkSoundEngine.SetState("ItemType", "Wierd");
+                AkSoundEngine.PostEvent("Play_ItemGet", gameObject);
+                itemGetCategory++;
+            }
+            else
+            {
+                AkSoundEngine.SetState("ItemType", "Cursed");
+                AkSoundEngine.PostEvent("Play_ItemGet", gameObject);
+                itemGetCategory = 1;
             }
         }
     }

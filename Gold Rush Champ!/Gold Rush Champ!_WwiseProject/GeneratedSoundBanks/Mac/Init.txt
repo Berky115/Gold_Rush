@@ -1,8 +1,20 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	4247838896	ItemType			\Default Work Unit\ItemType	
+
+State	ID	Name	State Group			Notes
+	338436036	Wierd	ItemType			
+	748895195	None	ItemType			
+	1160234136	Normal	ItemType			
+	1162897947	Cursed	ItemType			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	154721382	GetItem			\Default Work Unit\Master Audio Bus\GetItem	
+	612772313	AmbienceBus			\Default Work Unit\Master Audio Bus\AmbienceBus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\AmbienceBus\Ambience	
 
 Effect plug-ins	ID	Name	Type				Notes
 	446105723	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			

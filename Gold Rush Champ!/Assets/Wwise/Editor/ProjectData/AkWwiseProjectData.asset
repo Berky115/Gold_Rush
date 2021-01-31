@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3768c276d5b11b458df4e2d9e9f5c1a3
     GuidInternal: 
-    m_lastTime: -8585895619947403855
+    m_lastTime: -8585895526552106943
     List:
     - name: Ambience
       guid: e71c3a2a4c1f994b8ddcb4dfc5d70468
@@ -40,9 +40,33 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
+      - ElementName: AmbienceBus
+        ObjectType: 2
       - ElementName: Ambience
         ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\Ambience
+      Path: Default Work Unit\Master Audio Bus\AmbienceBus\Ambience
+    - name: AmbienceBus
+      guid: 8cfe8f0d255a7d458654451aeb609a54
+      id: 612772313
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: AmbienceBus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\AmbienceBus
+    - name: GetItem
+      guid: e5583c6c08ae814d88a2cf287b89833d
+      id: 154721382
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: GetItem
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\GetItem
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -52,6 +76,17 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: ff08c282465d064980d0f86aefe5385d
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Music
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Music
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -60,7 +95,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2d01e44e75a9e64ba62822c013a4ca82
     GuidInternal: 
-    m_lastTime: -8585895556312053799
+    m_lastTime: -8585895535556421638
     List:
     - name: Main
       guid: bac8264ab69d954fb9479730d78285d7
@@ -79,7 +114,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d9120a16e6a86644a0c2bdc5a2a88fc6
     GuidInternal: 
-    m_lastTime: -8585895555885285808
+    m_lastTime: -8585895535625545273
     List:
     - name: Play_Ambience
       guid: 12075bb55754364c8dc26e1c503dae2f
@@ -93,6 +128,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_ItemGet
+      guid: 514210bc390c85408e4d3128c4d1e106
+      id: 3545215997
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_ItemGet
+        ObjectType: 3
+      Path: Default Work Unit\Play_ItemGet
+      maxAttenuation: 0
+      maxDuration: 5.304827
+      minDuration: 2.840178
     - name: Play_MainMenuMusic
       guid: 65c548741ff5ae4289fca4b78fc63d06
       id: 667425441
@@ -216,8 +263,45 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5870a35dd8b1d74a9571fe8246963073
     GuidInternal: 
-    m_lastTime: -8585895677555719715
-    List: []
+    m_lastTime: -8585895536472021364
+    List:
+    - name: ItemType
+      guid: b5650ada1a10ec49a72e5d3f941babda
+      id: 4247838896
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ItemType
+        ObjectType: 9
+      Path: Default Work Unit\ItemType
+      values:
+      - name: Cursed
+        guid: 242309f8bf00cd44af0ba0f63b24ac68
+        id: 1162897947
+        PathAndIcons:
+        - ElementName: Cursed
+          ObjectType: 8
+      - name: None
+        guid: 36248a1951b6604295332a61a38ec01c
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Normal
+        guid: a4504a10a402564a8175ba5950e35739
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: Normal
+          ObjectType: 8
+      - name: Wierd
+        guid: b8878203509d4940a7efa6028e17324f
+        id: 338436036
+        PathAndIcons:
+        - ElementName: Wierd
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -236,7 +320,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2ca1f2690bf2d0448cd61c89b44c1c5f
     GuidInternal: 
-    m_lastTime: -8585895677555679824
+    m_lastTime: -8585895536471961181
     List: []
   ExpandedItems:
   - /Gold Rush Champ!_WwiseProject

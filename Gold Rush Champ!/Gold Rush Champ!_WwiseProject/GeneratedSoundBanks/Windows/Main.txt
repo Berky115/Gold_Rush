@@ -7,24 +7,40 @@ Event	ID	Name			Wwise Object Path	Notes
 	2477713992	Stop_Ambience			\Default Work Unit\Stop_Ambience	
 	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3545215997	Play_ItemGet			\Default Work Unit\Play_ItemGet	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	4247838896	ItemType			\Default Work Unit\ItemType	
+
+State	ID	Name	State Group			Notes
+	338436036	Wierd	ItemType			
+	748895195	None	ItemType			
+	1160234136	Normal	ItemType			
+	1162897947	Cursed	ItemType			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1614265074	Corruption			\Default Work Unit\Corruption	
 
 Effect plug-ins	ID	Name	Type				Notes
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 	2805769450	Special_Effect_1	Wwise Flanger			
+	3025917178	Standard	Wwise Flanger			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	29897674	footin_03	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_EBD9867D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_In\footin_03		14157
+	39250720	itemcollect_normal_01	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_normal_86E62978.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Normal\itemcollect_normal_01		54020
 	84834525	WHGA4 - AmbientBirds	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\WHGA4 - AmbientBirds_93C4BF1C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\WHGA4 - AmbientBirds		733938
 	109660841	footin_05	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_25136619.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_In\footin_05		18120
 	255187284	WHGA4 - AmbientBirds_01	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\WHGA4 - AmbientBirds_1B768BC3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\WHGA4 - AmbientBirds_01		501789
 	261678665	footout_02	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_67781561.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_Out\footout_02		26223
+	278308643	itemcollect_normal_03	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_normal_17498C88.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Normal\itemcollect_normal_03		81908
 	313607291	footin_04	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_0EB282FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_In\footin_04		20673
 	392421752	mm_full_120bpm_3-4_33b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\mm_full_120bpm_3-4_33b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMenuMusic\mm_full_120bpm_3-4_33b\mm_full_120bpm_3-4_33b		997183
 	401454594	footout_01	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_2BB552A2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_Out\footout_01		16008
 	475419321	n_ggr_piano_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\Bounced Files\n_ggr_piano_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_piano_140bpm_4-4_41b		1784343
 	516548471	d_ggr_banjo_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\Bounced Files\d_ggr_banjo_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\d_ggr_banjo_140bpm_4-4_41b		536953
+	522977174	itemcollect_normal_02	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_normal_CA8FA3B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Normal\itemcollect_normal_02		52115
+	619562059	itemcollect_weird_02	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_weird_B21EA225.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Wierd\itemcollect_weird_02		54788
 	623389939	n_ggr_violin2_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\Bounced Files\n_ggr_violin2_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_violin2_140bpm_4-4_41b		283947
 	637512831	footout_04	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_A915DDF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_Out\footout_04		19807
 	661022148	d_ggr_guitar_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\Bounced Files\d_ggr_guitar_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\d_ggr_guitar_140bpm_4-4_41b		1384039
@@ -33,8 +49,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	749725875	n_ggr_bass_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\Bounced Files\n_ggr_bass_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_bass_140bpm_4-4_41b		676833
 	763419279	footin_01	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_99ACD622.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_In\footin_01		15334
 	784994383	footout_05	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_663927BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_Out\footout_05		16440
+	788309985	itemcollect_cursed_01	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_cursed_A623E74F.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Cursed\itemcollect_cursed_01		48192
 	806782554	459407__pfannkuchn__small-river-1-fast-close	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\459407__pfannkuchn__small-river-1-fast-close_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\459407__pfannkuchn__small-river-1-fast-close		1070165
+	877694805	itemcollect_cursed_02	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_cursed_A0C611F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Cursed\itemcollect_cursed_02		48379
+	878724656	itemcollect_cursed_03	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_cursed_2FE1A248.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Cursed\itemcollect_cursed_03		58891
+	909079240	itemcollect_weird_03	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_weird_033917D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Wierd\itemcollect_weird_03		49730
 	984267069	n_ggr_violin_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\Bounced Files\n_ggr_violin_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_violin_140bpm_4-4_41b		540890
 	984521360	footout_03	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_41FB5421.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_Out\footout_03		13604
 	1008248043	footin_02	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_6573313F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_In\footin_02		15340
+	1069262065	itemcollect_weird_01	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_weird_6EE2BFC6.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Wierd\itemcollect_weird_01		52764
 

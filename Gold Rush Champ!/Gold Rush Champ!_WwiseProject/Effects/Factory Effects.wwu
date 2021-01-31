@@ -188,6 +188,7 @@
 						</Effect>
 						<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<PropertyList>
+								<Property Name="OutputGain" Type="Real32" Value="2.9"/>
 								<Property Name="Ratio" Type="Real32" Value="50"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
 								<Property Name="Threshold" Type="Real32" Value="-1"/>
@@ -1542,6 +1543,7 @@
 										<Property Name="ModDepth" Type="Real32" Value="65"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
 										<Property Name="ModWaveform" Type="int32" Value="1"/>
+										<Property Name="WetDryMix" Type="Real32" Value="9"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Deep" ID="{76753DA8-3DCF-4812-A726-2745812F6C1B}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">

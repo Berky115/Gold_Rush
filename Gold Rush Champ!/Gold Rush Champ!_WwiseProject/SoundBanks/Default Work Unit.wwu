@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{4A26C8BA-9DB6-4F95-B947-9730D78285D7}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_ItemGet" ID="{BC104251-0C39-4085-8E4D-3128C4D1E106}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_MainMenuMusic" ID="{265DEFE0-4317-4115-B287-1F6697859CB8}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Walking" ID="{816E90BB-A437-4154-B0F6-DF382D3A8F8C}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainMenuMusic" ID="{7448C565-F51F-42AE-89FC-A4B78FC63D06}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>

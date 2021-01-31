@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PLAY_ITEMGET = 3545215997U;
         static const AkUniqueID PLAY_MAINMENUMUSIC = 667425441U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_WALKING = 1733885923U;
@@ -22,6 +23,23 @@ namespace AK
         static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID STOP_WALKING = 165461773U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace ITEMTYPE
+        {
+            static const AkUniqueID GROUP = 4247838896U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CURSED = 1162897947U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NORMAL = 1160234136U;
+                static const AkUniqueID WIERD = 338436036U;
+            } // namespace STATE
+        } // namespace ITEMTYPE
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
@@ -36,7 +54,10 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENCEBUS = 612772313U;
+        static const AkUniqueID GETITEM = 154721382U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

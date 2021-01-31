@@ -11,15 +11,15 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4234294811">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2309853003">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
-				<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience"/>
+				<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbienceBus\Ambience"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2733704138">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3193372336">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -39,6 +39,73 @@
 							<Path>SFX\459407__pfannkuchn__small-river-1-fast-close_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbienceBus\Ambience"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3545215997" Name="Play_ItemGet" ObjectPath="\Events\Default Work Unit\Play_ItemGet" DurationType="OneShot" DurationMin="2.840178" DurationMax="5.304827">
+					<IncludedMemoryFiles>
+						<File Id="39250720" Language="SFX">
+							<ShortName>itemcollect_normal.wav</ShortName>
+							<Path>SFX\itemcollect_normal_86E62978.wem</Path>
+						</File>
+						<File Id="278308643" Language="SFX">
+							<ShortName>itemcollect_normal.wav</ShortName>
+							<Path>SFX\itemcollect_normal_17498C88.wem</Path>
+						</File>
+						<File Id="522977174" Language="SFX">
+							<ShortName>itemcollect_normal.wav</ShortName>
+							<Path>SFX\itemcollect_normal_CA8FA3B2.wem</Path>
+						</File>
+						<File Id="619562059" Language="SFX">
+							<ShortName>itemcollect_weird.wav</ShortName>
+							<Path>SFX\itemcollect_weird_B21EA225.wem</Path>
+						</File>
+						<File Id="788309985" Language="SFX">
+							<ShortName>itemcollect_cursed.wav</ShortName>
+							<Path>SFX\itemcollect_cursed_A623E74F.wem</Path>
+						</File>
+						<File Id="877694805" Language="SFX">
+							<ShortName>itemcollect_cursed.wav</ShortName>
+							<Path>SFX\itemcollect_cursed_A0C611F1.wem</Path>
+						</File>
+						<File Id="878724656" Language="SFX">
+							<ShortName>itemcollect_cursed.wav</ShortName>
+							<Path>SFX\itemcollect_cursed_2FE1A248.wem</Path>
+						</File>
+						<File Id="909079240" Language="SFX">
+							<ShortName>itemcollect_weird.wav</ShortName>
+							<Path>SFX\itemcollect_weird_033917D6.wem</Path>
+						</File>
+						<File Id="1069262065" Language="SFX">
+							<ShortName>itemcollect_weird.wav</ShortName>
+							<Path>SFX\itemcollect_weird_6EE2BFC6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{104A50A4-02A4-4A56-8175-BA5950E35739}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{198A2436-B651-4260-9533-2A61A38EC01C}">
+							<Media>
+								<File Id="39250720"/>
+								<File Id="522977174"/>
+								<File Id="278308643"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{038287B8-9D50-4049-A7EF-A6028E17324F}">
+							<Media>
+								<File Id="1069262065"/>
+								<File Id="619562059"/>
+								<File Id="909079240"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F8092324-00BF-44CD-AF0B-A0F63B24AC68}">
+							<Media>
+								<File Id="788309985"/>
+								<File Id="877694805"/>
+								<File Id="878724656"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="667425441" Name="Play_MainMenuMusic" ObjectPath="\Events\Default Work Unit\Play_MainMenuMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -128,7 +195,7 @@
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
-						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience"/>
+						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbienceBus\Ambience"/>
 					</AuxBusSends>
 				</Event>
 				<Event Id="2477713992" Name="Stop_Ambience" ObjectPath="\Events\Default Work Unit\Stop_Ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -139,6 +206,16 @@
 			<GameParameters>
 				<GameParameter Id="1614265074" Name="Corruption" ObjectPath="\Game Parameters\Default Work Unit\Corruption"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="4247838896" Name="ItemType" ObjectPath="\States\Default Work Unit\ItemType">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\ItemType\None"/>
+						<State Id="1160234136" Name="Normal" ObjectPath="\States\Default Work Unit\ItemType\Normal"/>
+						<State Id="338436036" Name="Wierd" ObjectPath="\States\Default Work Unit\ItemType\Wierd"/>
+						<State Id="1162897947" Name="Cursed" ObjectPath="\States\Default Work Unit\ItemType\Cursed"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

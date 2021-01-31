@@ -38,7 +38,10 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+							<ObjectRef Name="AmbienceBus" ID="{0D8FFE8C-5A25-457D-8654-451AEB609A54}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Ambience" ID="{2A3A1CE7-1F4C-4B99-8DDC-B4DFC5D70468}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -218,7 +221,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+							<ObjectRef Name="AmbienceBus" ID="{0D8FFE8C-5A25-457D-8654-451AEB609A54}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Ambience" ID="{2A3A1CE7-1F4C-4B99-8DDC-B4DFC5D70468}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
@@ -583,6 +586,405 @@
 						<ItemRef Name="Foot_In" ID="{269812B5-A336-4899-A3BD-7B6FAFB89B63}"/>
 					</Playlist>
 				</RandomSequenceContainer>
+				<SwitchContainer Name="PickUpItem" ID="{453780D2-5B9C-48D4-A0C0-F1B035099CA9}" ShortID="816139337">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Normal" ID="{104A50A4-02A4-4A56-8175-BA5950E35739}" WorkUnitID="{5DA37058-B1D8-4AD7-9571-FE8246963073}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="GetItem" ID="{6C3C58E5-AE08-4D81-88A2-CF287B89833D}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="ItemType" ID="{DA0A65B5-101A-49EC-A72E-5D3F941BABDA}" WorkUnitID="{5DA37058-B1D8-4AD7-9571-FE8246963073}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Normal" ID="{87A2A29E-5732-4389-B591-A7757E88A208}" ShortID="169806610">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="itemcollect_normal_01" ID="{44D64167-9951-4C5A-B215-FAEAFFCC9E3D}" ShortID="696549487">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_normal" ID="{08CB4AC6-1FD3-4856-97DB-6D637026B1BC}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.66546907106164"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.2075700627854"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_normal.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="39250720"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_normal" ID="{08CB4AC6-1FD3-4856-97DB-6D637026B1BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="itemcollect_normal_02" ID="{424AFC83-29E6-45D8-876F-5235B38E0205}" ShortID="640939414">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_normal" ID="{6BE44760-B2F1-46A4-BC63-837892908B98}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.66546907106164"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.26925410245434"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.53850820490868"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_normal.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="522977174"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_normal" ID="{6BE44760-B2F1-46A4-BC63-837892908B98}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="itemcollect_normal_03" ID="{BAA725A6-ED78-4810-BF1A-3EB36040A6B6}" ShortID="1045421806">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_normal" ID="{6561A81B-21CE-4490-B565-EB7CF93A51EE}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.66546907106164"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.72356032391552"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.0283877354452"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_normal.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="278308643"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_normal" ID="{6561A81B-21CE-4490-B565-EB7CF93A51EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="itemcollect_normal_01" ID="{44D64167-9951-4C5A-B215-FAEAFFCC9E3D}"/>
+								<ItemRef Name="itemcollect_normal_02" ID="{424AFC83-29E6-45D8-876F-5235B38E0205}"/>
+								<ItemRef Name="itemcollect_normal_03" ID="{BAA725A6-ED78-4810-BF1A-3EB36040A6B6}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Wierd" ID="{CFEEEA8C-DC87-4C3C-8C2F-900095DA2A36}" ShortID="668287743">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<ObjectRef Name="Standard" ID="{1A2EAB31-6283-4C0D-89B2-F050DF89D421}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="itemcollect_weird_01" ID="{FD6D50BE-579E-402D-AABF-2345603B04FE}" ShortID="6014218">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_weird" ID="{55B3B6CC-AA30-461D-A9EB-488B763DB6F8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.44907070490868"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.24591837899544"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_weird.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1069262065"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_weird" ID="{55B3B6CC-AA30-461D-A9EB-488B763DB6F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="itemcollect_weird_02" ID="{52698A80-64CA-4A8F-AAF0-0818707E2BD1}" ShortID="787897825">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_weird" ID="{5FD4183B-7779-4CC9-85D1-20C6A9C2BCA9}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.44907070490868"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.36184403538813"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.60776241438356"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_weird.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="619562059"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_weird" ID="{5FD4183B-7779-4CC9-85D1-20C6A9C2BCA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="itemcollect_weird_03" ID="{2887B33A-A649-4783-AC5F-4B4FF67A309D}" ShortID="173098290">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_weird" ID="{559A2E71-6594-499A-9456-E0EE3908AD70}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.44907070490868"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.72368807077625"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.56386665239726"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_weird.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="909079240"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_weird" ID="{559A2E71-6594-499A-9456-E0EE3908AD70}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="itemcollect_weird_01" ID="{FD6D50BE-579E-402D-AABF-2345603B04FE}"/>
+								<ItemRef Name="itemcollect_weird_02" ID="{52698A80-64CA-4A8F-AAF0-0818707E2BD1}"/>
+								<ItemRef Name="itemcollect_weird_03" ID="{2887B33A-A649-4783-AC5F-4B4FF67A309D}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Cursed" ID="{7E510143-0687-4F33-8C74-78D0068C719B}" ShortID="216777510">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="itemcollect_cursed_01" ID="{1C9FEF4A-9ED2-4FE5-948F-26BE9B511B69}" ShortID="895354254">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_cursed" ID="{8CEDD46B-39EF-47C4-87E5-DEDAA3882BF3}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.31324875142694"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.38917840325342"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_cursed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="788309985"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_cursed" ID="{8CEDD46B-39EF-47C4-87E5-DEDAA3882BF3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="itemcollect_cursed_02" ID="{11BFAA88-8A6F-4C93-96CC-EA40FEE691E6}" ShortID="449872106">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_cursed" ID="{9EEF78B5-6CE8-484B-8258-CBCF330FAAB3}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.31324875142694"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.3353819206621"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.6707638413242"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_cursed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="877694805"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_cursed" ID="{9EEF78B5-6CE8-484B-8258-CBCF330FAAB3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="itemcollect_cursed_03" ID="{CF912927-3940-436B-BA55-3D2E2DF60F7E}" ShortID="872335766">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{45F207FC-8496-4AF2-BD61-B874FF5C5536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{76C26837-B1D5-451B-8DF4-E2D9E9F5C1A3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="itemcollect_cursed" ID="{89C5AD2F-C219-45E4-B46F-887D6AA9F24B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.31324875142694"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.77835680650685"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.7592965182649"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>itemcollect_cursed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="878724656"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="itemcollect_cursed" ID="{89C5AD2F-C219-45E4-B46F-887D6AA9F24B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="itemcollect_cursed_01" ID="{1C9FEF4A-9ED2-4FE5-948F-26BE9B511B69}"/>
+								<ItemRef Name="itemcollect_cursed_02" ID="{11BFAA88-8A6F-4C93-96CC-EA40FEE691E6}"/>
+								<ItemRef Name="itemcollect_cursed_03" ID="{CF912927-3940-436B-BA55-3D2E2DF60F7E}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Cursed" ID="{7E510143-0687-4F33-8C74-78D0068C719B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Wierd" ID="{CFEEEA8C-DC87-4C3C-8C2F-900095DA2A36}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Normal" ID="{87A2A29E-5732-4389-B591-A7757E88A208}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Cursed" ID="{F8092324-00BF-44CD-AF0B-A0F63B24AC68}"/>
+								<ItemList>
+									<ItemRef Name="Cursed" ID="{7E510143-0687-4F33-8C74-78D0068C719B}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="None" ID="{198A2436-B651-4260-9533-2A61A38EC01C}"/>
+								<ItemList>
+									<ItemRef Name="Normal" ID="{87A2A29E-5732-4389-B591-A7757E88A208}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Normal" ID="{104A50A4-02A4-4A56-8175-BA5950E35739}"/>
+								<ItemList>
+									<ItemRef Name="Normal" ID="{87A2A29E-5732-4389-B591-A7757E88A208}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Wierd" ID="{038287B8-9D50-4049-A7EF-A6028E17324F}"/>
+								<ItemList>
+									<ItemRef Name="Wierd" ID="{CFEEEA8C-DC87-4C3C-8C2F-900095DA2A36}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
