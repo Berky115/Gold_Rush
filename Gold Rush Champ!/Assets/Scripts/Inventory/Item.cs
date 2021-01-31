@@ -19,4 +19,6 @@ public class Item : ScriptableObject
     [TextArea(1, 5)]
     public string AttackText;
     public int AttackDamage = 0;
+
+    public string itemType;
 }

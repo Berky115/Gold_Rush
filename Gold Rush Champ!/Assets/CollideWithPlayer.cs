@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollideWithPlayer : MonoBehaviour
 {
+    PlayerAudio playerAudio = new PlayerAudio();
     // Start is called before the first frame update
 
     void Start()
@@ -20,11 +21,14 @@ public class CollideWithPlayer : MonoBehaviour
         // called when this GameObject collides with GameObject2.
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Player") {
+        if(col.gameObject.tag == "Player")
+        {
             Debug.Log("GameObject1 collided with " + col.name);
             Debug.Log(gameObject.GetComponentInParent<ObjectInfo>().data.Description);
+            PlayAudio();
             // GameObject.Find("ItemManager").GetComponent<ItemTracking>().foundList.Add(gameObject.GetComponentInParent<ObjectInfo>().data);
-            if(!gameObject.GetComponentInParent<ObjectInfo>().data.RepeatIfThrownOut){
+            if (!gameObject.GetComponentInParent<ObjectInfo>().data.RepeatIfThrownOut)
+            {
                 GameObject.Find("ItemManager").GetComponent<ItemSpawning>().ItemList.Remove(gameObject.GetComponentInParent<ObjectInfo>().data);
             }
             Destroy(transform.parent.gameObject);
@@ -36,5 +40,11 @@ public class CollideWithPlayer : MonoBehaviour
             ItemDescriptionPage.ShowItem_Static(itemSprite, itemName, itemDesc, data);
         }
 
+    }
+
+    private void PlayAudio()
+    {
+        string itemType = gameObject.GetComponentInParent<ObjectInfo>().data.itemType;
+        playerAudio.PlayItemCollect(itemType);
     }
 }
