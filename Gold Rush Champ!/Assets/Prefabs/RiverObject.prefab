@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3847912791874138561}
   - component: {fileID: 1012023136}
+  - component: {fileID: 3060772289450308353}
   m_Layer: 0
   m_Name: RiverObject
   m_TagString: Untagged
@@ -45,6 +46,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 3063c3590e158bb4e86ce7268f4f092e, type: 2}
+--- !u!114 &3060772289450308353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3847912791874138560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f6b80f73dad8e408851e0b1bff73c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 21300000, guid: 17e553777fcaf8b42840ac7704562e23, type: 3}
+  itemName: {fileID: 0}
+  itemDesc: {fileID: 0}
+  currentItem: {fileID: 11400000, guid: 3063c3590e158bb4e86ce7268f4f092e, type: 2}
+  riverObject: {fileID: 3847912791874138560}
+  ItemList:
+  - {fileID: 11400000, guid: 3433496278a238e42863f11ea1c8a578, type: 2}
+  - {fileID: 11400000, guid: 0a3e53e16b7cdcb4082ee4d917a819e4, type: 2}
+  - {fileID: 11400000, guid: 3063c3590e158bb4e86ce7268f4f092e, type: 2}
 --- !u!1 &3847912792242052917
 GameObject:
   m_ObjectHideFlags: 0
