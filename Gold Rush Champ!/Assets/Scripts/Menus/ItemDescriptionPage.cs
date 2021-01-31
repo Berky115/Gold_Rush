@@ -18,6 +18,7 @@ public class ItemDescriptionPage : MonoBehaviour
         image = transform.Find("Image").GetComponent<Image>();
         nameText = transform.Find("Item Name").GetComponent<Text>();
         descriptionText = transform.Find("Item Description").GetComponent<Text>();
+        gameObject.SetActive(false);
     }
 
     //sets the item info to be displayed
@@ -25,14 +26,16 @@ public class ItemDescriptionPage : MonoBehaviour
     {
         gameObject.SetActive(true);
         image.sprite = itemSprite;
-        nameText.text = itemName;
-        descriptionText.text = itemDesc;
+        nameText.text = itemName.ToString();
+        descriptionText.text = itemDesc.ToString();
+        PauseControl.Pause();
     }
     
     //closes window
     private void HideItemInfo()
     {
         gameObject.SetActive(false);
+        PauseControl.Resume();
     }
 
     //static function for reference elsewhere
@@ -45,4 +48,6 @@ public class ItemDescriptionPage : MonoBehaviour
     {
         instance.HideItemInfo();
     }
+
+    
 }
