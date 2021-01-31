@@ -60,7 +60,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2d01e44e75a9e64ba62822c013a4ca82
     GuidInternal: 
-    m_lastTime: -8585895619947403855
+    m_lastTime: -8585895556312053799
     List:
     - name: Main
       guid: bac8264ab69d954fb9479730d78285d7
@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d9120a16e6a86644a0c2bdc5a2a88fc6
     GuidInternal: 
-    m_lastTime: -8585895619947463910
+    m_lastTime: -8585895555885285808
     List:
     - name: Play_Ambience
       guid: 12075bb55754364c8dc26e1c503dae2f
@@ -90,6 +90,18 @@ MonoBehaviour:
       - ElementName: Play_Ambience
         ObjectType: 3
       Path: Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MainMenuMusic
+      guid: 65c548741ff5ae4289fca4b78fc63d06
+      id: 667425441
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MainMenuMusic
+        ObjectType: 3
+      Path: Default Work Unit\Play_MainMenuMusic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -117,6 +129,42 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_Ambience
+      guid: 5e31ddc3de5ab946a51346d901dfcf11
+      id: 2477713992
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MainMenuMusic
+      guid: e0ef5d2617431541b2871f6697859cb8
+      id: 1307794083
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_MainMenuMusic
+        ObjectType: 3
+      Path: Default Work Unit\Stop_MainMenuMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music
+      guid: b1dd4883a8ba17498e0f7f0ade4db1da
+      id: 2837384057
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Music
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Walking
       guid: bb906e8137a45441b0f6df382d3a8f8c
       id: 165461773
@@ -192,7 +240,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Gold Rush Champ!_WwiseProject
-  - /Gold Rush Champ!_WwiseProject/Events
-  - /Gold Rush Champ!_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

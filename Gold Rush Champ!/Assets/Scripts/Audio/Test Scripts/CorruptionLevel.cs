@@ -5,6 +5,7 @@ using UnityEngine;
 public class CorruptionLevel : MonoBehaviour
 {
     float currentLevel = 1;
+    bool mainTheme = true;
     
     void Update()
     {
@@ -34,6 +35,22 @@ public class CorruptionLevel : MonoBehaviour
             if (!Input.GetKey(KeyCode.A) || !Input.GetKey(KeyCode.D))
             {
                 AkSoundEngine.PostEvent("Stop_Walking", gameObject);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            if (mainTheme)
+            {
+                AkSoundEngine.PostEvent("Stop_Music", gameObject);
+                AkSoundEngine.PostEvent("Play_MainMenuMusic", gameObject);
+                mainTheme = false;
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Stop_MainMenuMusic", gameObject);
+                AkSoundEngine.PostEvent("Play_Music", gameObject);
+                mainTheme = true;
             }
         }
     }
