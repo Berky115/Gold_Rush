@@ -7,6 +7,8 @@ public class ItemSpawning : MonoBehaviour
     // Start is called before the first frame update
 
     public int delay = 1;
+    public float CreepyLevel = 1;
+    public float creepThreshold = 5;
     public GameObject riverItem;
     public List<Item> ItemList;
     public bool isRunning = true;
@@ -30,9 +32,18 @@ public class ItemSpawning : MonoBehaviour
         Debug.Log("NEW OBJECT GENERATED");
         GameObject spawnedItem = Instantiate(riverItem, new Vector3(Random.Range(-5, 5), 2, 0), Quaternion.identity);
         int index = Random.Range(0, ItemList.Count);
+        while(CreepyLevel < ItemList[index].CreepyRank){
+            index = Random.Range(0, ItemList.Count);
+        }
         Debug.Log(ItemList[index].name);
         spawnedItem.GetComponent<ObjectInfo>().data = ItemList[index];
+        CreepyLevel += .25f;
+        Debug.Log("Creepy Level at " + CreepyLevel);
         isRunning = true;
+        if(CreepyLevel > creepThreshold){
+            //This check may need to be done in the pop up after the user reads what happened.
+            Debug.Log("Time to transition to the final battle!");
+        }
     }
     
 }

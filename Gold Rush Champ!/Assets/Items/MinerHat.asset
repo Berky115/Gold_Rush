@@ -17,5 +17,6 @@ MonoBehaviour:
   Description: Look a Miner wore this
   RepeatIfThrownOut: 0
   IsCursed: 0
+  CreepyRank: 2
   AttackText: The miner hat distracts you and you fall over
   AttackDamage: 10
