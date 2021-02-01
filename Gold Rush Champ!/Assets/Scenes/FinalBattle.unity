@@ -1803,7 +1803,6 @@ GameObject:
   - component: {fileID: 1199434147}
   - component: {fileID: 1199434144}
   - component: {fileID: 1199434150}
-  - component: {fileID: 1199434149}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1936,35 +1935,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &1199434149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199434143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 849d2a1d974ba1c4283fd9c4da4c9e17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 110d579074453214b8b727ce5a6d41ab, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &1199434150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,7 +1955,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e1c93ef894936d340a1936f6818b6247, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 9e25060e5a76e4b46a7ac67eb21f3cda, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
