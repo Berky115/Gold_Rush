@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
+    public GameObject player;
+    
     public void PlayGame()
     {
+        AkSoundEngine.PostEvent("Stop_MainMenuMusic", player);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

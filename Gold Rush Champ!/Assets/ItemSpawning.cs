@@ -41,6 +41,7 @@ public class ItemSpawning : MonoBehaviour
         }
         Debug.Log(ItemList[index].name);
         CreepyLevel += .05f;
+        AkSoundEngine.SetRTPCValue("Corruption", CreepyLevel);
         spawnedItem.GetComponent<ObjectInfo>().data = ItemList[index];
         Debug.Log("Creepy Level at " + CreepyLevel);
         isRunning = true;
