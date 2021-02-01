@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: Blood Shot Eyeball
   m_EditorClassIdentifier: 
-  Name: 
+  Name: A Blood Shot Eyeball
   ItemImage: {fileID: 0}
-  Description: 
+  Description: One can only wonder what sort of horrors this eye has behold
   RepeatIfThrownOut: 0
-  IsCursed: 0
-  CreepyRank: 0
+  IsCursed: 1
+  CreepyRank: 4
   AttackText: 
   AttackDamage: 0
   itemType: Wierd

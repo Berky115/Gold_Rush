@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DenimPatch
   m_EditorClassIdentifier: 
   Name: Denim Patch
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: 2493e16d1e767ff408ed3652b4a0bbf9, type: 3}
   Description: This sturdy fabrix probably came from a tent.  Or maybe some miner's
     clothes.
   RepeatIfThrownOut: 1
