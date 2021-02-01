@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Femur
   m_EditorClassIdentifier: 
   Name: A Femur
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: 7293c1034b6151f418b58bb8faf0bace, type: 3}
   Description: The femur or thigh bone, is the proximal bone of the hindlimb in tetrapod
     vertebrate, the largest bone of the human body.
   RepeatIfThrownOut: 0

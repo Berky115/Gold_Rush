@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GoldPan
   m_EditorClassIdentifier: 
   Name: A Gold Pan
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: 49225e8c190b6824aa5b84bac0f5c82d, type: 3}
   Description: A sifting pan identical to the one you are using.  Someone must have
     dropped this.
   RepeatIfThrownOut: 0

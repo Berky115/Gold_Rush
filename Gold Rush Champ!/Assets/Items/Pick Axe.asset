@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pick Axe
   m_EditorClassIdentifier: 
   Name: 
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: 9ff97d5d96eeb69419403b62b651d5d9, type: 3}
   Description: 
   RepeatIfThrownOut: 0
   IsCursed: 0
