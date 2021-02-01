@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: Baby Alligator
   m_EditorClassIdentifier: 
-  Name: 
-  ItemImage: {fileID: 0}
-  Description: 
-  RepeatIfThrownOut: 0
+  Name: Baby Alligator
+  ItemImage: {fileID: 21300000, guid: b38aec11c9e8c3e49b0012d86956f341, type: 3}
+  Description: Not endemic to this part of California for at least 400 more years
+  RepeatIfThrownOut: 1
   IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
+  CreepyRank: 3
+  AttackText: I  can't make the baby alligator hurt you
   AttackDamage: 0
   itemType: Normal

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: Item
   m_EditorClassIdentifier: 
-  Name: 
+  Name: salmon carcass
   ItemImage: {fileID: 0}
-  Description: 
-  RepeatIfThrownOut: 0
+  Description: 'Fact: Bears can climb faster than they can run'
+  RepeatIfThrownOut: 1
   IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
-  AttackDamage: 0
+  CreepyRank: 2
+  AttackText: A hungry, ghostly bear descends upon you.
+  AttackDamage: 20
   itemType: 

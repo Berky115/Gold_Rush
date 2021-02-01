@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
   m_Name: Antique Firearm
   m_EditorClassIdentifier: 
-  Name: 
-  ItemImage: {fileID: 0}
-  Description: 
+  Name: Antique firearm
+  ItemImage: {fileID: 21300000, guid: 306056fd846a7014898aabef59bb606b, type: 3}
+  Description: Probably not very useful anymor
   RepeatIfThrownOut: 0
   IsCursed: 0
-  CreepyRank: 0
-  AttackText: 
-  AttackDamage: 0
+  CreepyRank: 2
+  AttackText: Ghost bullets hurt almost as much as real ones
+  AttackDamage: 10
   itemType: Normal
