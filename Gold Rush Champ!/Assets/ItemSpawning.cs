@@ -7,8 +7,8 @@ public class ItemSpawning : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    
 
+    GameObject player;
     public int delay = 1;
     public float CreepyLevel = 1;
     public float creepThreshold = 5;
@@ -18,7 +18,7 @@ public class ItemSpawning : MonoBehaviour
     public UnityEvent StartFinalBattle;
     void Start()
     {
-
+        player = FindObjectOfType<Camera>().gameObject;
     }
 
     // Update is called once per frame
@@ -52,6 +52,8 @@ public class ItemSpawning : MonoBehaviour
             Debug.Log("Time to transition to the final battle!");
 
             if (StartFinalBattle != null) {
+                AkSoundEngine.PostEvent("Stop_Music", player);
+                AkSoundEngine.PostEvent("Stop_Ambience", player);
                 StartFinalBattle.Invoke();
             }
         }

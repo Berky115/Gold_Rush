@@ -140,6 +140,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_BossMusic" ID="{2EF40EB7-8C76-477C-812A-2CB5C0499AAB}">
+					<ChildrenList>
+						<Action Name="" ID="{59D333F2-DEE3-4758-90C6-2543A2E2CF04}" ShortID="580660339">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BossMusic" ID="{B31F6A7E-4E31-49A3-801F-A97C6406D81A}" WorkUnitID="{487BB1BA-4DD1-4405-B09B-5FF82FFA30E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
