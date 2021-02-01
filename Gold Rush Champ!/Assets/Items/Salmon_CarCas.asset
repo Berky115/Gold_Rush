@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
-  m_Name: Helix_Fossil
+  m_Name: Salmon_CarCas
   m_EditorClassIdentifier: 
-  Name: Helix Fossil
-  ItemImage: {fileID: 0}
-  Description: Praise lord Helix!
-  RepeatIfThrownOut: 0
+  Name: salmon carcass
+  ItemImage: {fileID: 21300000, guid: 6aad4e50edee6834d87f4ea75973b6a4, type: 3}
+  Description: 'Fact: Bears can climb faster than they can run'
+  RepeatIfThrownOut: 1
   IsCursed: 0
   CreepyRank: 2
-  AttackText: Lord Helix would never harm you
-  AttackDamage: 0
-  itemType: Normal
+  AttackText: A hungry, ghostly bear descends upon you.
+  AttackDamage: 20
+  itemType: 

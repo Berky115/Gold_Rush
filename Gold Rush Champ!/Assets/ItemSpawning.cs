@@ -36,7 +36,7 @@ public class ItemSpawning : MonoBehaviour
         Debug.Log("NEW OBJECT GENERATED");
         GameObject spawnedItem = Instantiate(riverItem, new Vector3(Random.Range(-5, 5), 2, 0), Quaternion.identity);
         int index = Random.Range(0, ItemList.Count);
-        while(CreepyLevel < ItemList[index].CreepyRank && (CreepyLevel - 2.0f) > ItemList[index].CreepyRank){
+        while(CreepyLevel < ItemList[index].CreepyRank){
             index = Random.Range(0, ItemList.Count); 
         }
         Debug.Log(ItemList[index].name);
