@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
-  m_Name: Necronomicon
+  m_Name: Item
   m_EditorClassIdentifier: 
-  Name: The Necronomicon
-  ItemImage: {fileID: 21300000, guid: 83366e676d7595d43b3e797ff56f6688, type: 3}
-  Description: '"That is not dead which can eternal lie. And with strange aeons even
-    death may die."'
+  Name: 
+  ItemImage: {fileID: 0}
+  Description: 
   RepeatIfThrownOut: 0
-  IsCursed: 1
-  CreepyRank: 5
-  AttackText: FEAR THE OLD BLOOD!
-  AttackDamage: 15
-  itemType: Cursed
+  IsCursed: 0
+  CreepyRank: 0
+  AttackText: 
+  AttackDamage: 0
+  itemType: 

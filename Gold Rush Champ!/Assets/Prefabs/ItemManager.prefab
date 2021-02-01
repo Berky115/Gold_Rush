@@ -66,7 +66,23 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7c39b21035339644ca963a1ff33ba73e, type: 2}
   - {fileID: 11400000, guid: 5efd686dc81ab7d4e90d9b3b78fb4995, type: 2}
   - {fileID: 11400000, guid: a1611313a1665bf44bbef0435e54d946, type: 2}
+  - {fileID: 11400000, guid: 87eafacfe1d1ebf44996681544ab1cf4, type: 2}
+  - {fileID: 11400000, guid: f6feaeb6a009dee488d59c8829755159, type: 2}
+  - {fileID: 11400000, guid: eb32a52582ff49a4fa65fdd851ab5e9a, type: 2}
+  - {fileID: 11400000, guid: 9f0fba84083418740ad773b31c243526, type: 2}
   isRunning: 1
   StartFinalBattle:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
