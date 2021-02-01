@@ -70,6 +70,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f6feaeb6a009dee488d59c8829755159, type: 2}
   - {fileID: 11400000, guid: eb32a52582ff49a4fa65fdd851ab5e9a, type: 2}
   - {fileID: 11400000, guid: 9f0fba84083418740ad773b31c243526, type: 2}
+  - {fileID: 11400000, guid: e8015942afe88654298dcfbd0933f313, type: 2}
   isRunning: 1
   StartFinalBattle:
     m_PersistentCalls:
