@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CollideWithPlayer : MonoBehaviour
 {
-    PlayerAudio playerAudio = new PlayerAudio();
+    PlayerAudio playerAudio;
     // Start is called before the first frame update
 
     void Start()
     {
-        
+        playerAudio = FindObjectOfType<PlayerAudio>();
     }
 
     // Update is called once per frame
@@ -25,12 +25,13 @@ public class CollideWithPlayer : MonoBehaviour
         {
             Debug.Log("GameObject1 collided with " + col.name);
             Debug.Log(gameObject.GetComponentInParent<ObjectInfo>().data.Description);
-            PlayAudio();
+            
             // GameObject.Find("ItemManager").GetComponent<ItemTracking>().foundList.Add(gameObject.GetComponentInParent<ObjectInfo>().data);
             if (!gameObject.GetComponentInParent<ObjectInfo>().data.RepeatIfThrownOut)
             {
                 GameObject.Find("ItemManager").GetComponent<ItemSpawning>().ItemList.Remove(gameObject.GetComponentInParent<ObjectInfo>().data);
             }
+            PlayAudio();
             Destroy(transform.parent.gameObject);
             //appending item menu pop-up
             Sprite itemSprite = gameObject.GetComponentInParent<ObjectInfo>().data.ItemImage;

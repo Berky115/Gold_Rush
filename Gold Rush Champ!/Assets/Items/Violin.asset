@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 2
   AttackText: A dissonant music strikes at you
   AttackDamage: 10
+  itemType: Wierd

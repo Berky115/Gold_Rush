@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 1
   AttackText: The innocent rock is hurled at you with startling force
   AttackDamage: 10
+  itemType: Normal

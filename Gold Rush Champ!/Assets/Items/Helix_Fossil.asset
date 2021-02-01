@@ -20,3 +20,4 @@ MonoBehaviour:
   CreepyRank: 2
   AttackText: Lord Helix would never harm you
   AttackDamage: 0
+  itemType: Normal

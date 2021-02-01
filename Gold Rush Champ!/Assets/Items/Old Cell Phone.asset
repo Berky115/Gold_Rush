@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 3
   AttackText: A dissonant ringtone strikes at you
   AttackDamage: 10
+  itemType: Normal

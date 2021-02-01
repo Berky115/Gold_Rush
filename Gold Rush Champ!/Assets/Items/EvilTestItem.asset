@@ -20,3 +20,4 @@ MonoBehaviour:
   CreepyRank: 4
   AttackText: The evil attacks
   AttackDamage: 20
+  itemType: Cursed

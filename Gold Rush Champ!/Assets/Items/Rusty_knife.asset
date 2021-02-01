@@ -22,3 +22,4 @@ MonoBehaviour:
   CreepyRank: 2
   AttackText: The knife stabs you.  Were you expecting anything else?
   AttackDamage: 15
+  itemType: Wierd

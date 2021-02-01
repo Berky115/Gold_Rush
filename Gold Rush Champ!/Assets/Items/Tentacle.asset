@@ -22,3 +22,4 @@ MonoBehaviour:
   CreepyRank: 2
   AttackText: NANI!?!!?
   AttackDamage: 5
+  itemType: Cursed

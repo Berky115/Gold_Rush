@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 3
   AttackText: The blood helps! Are you B-?
   AttackDamage: -10
+  itemType: Wierd

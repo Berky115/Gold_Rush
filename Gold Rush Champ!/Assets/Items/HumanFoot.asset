@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 4
   AttackText: Kick attack!
   AttackDamage: 20
+  itemType: Wierd

@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 3
   AttackText: Watch out bonehead!
   AttackDamage: 10
+  itemType: Wierd

@@ -22,3 +22,4 @@ MonoBehaviour:
   AttackText: This pan and your pan cancel each other out.  You see a diferent place,
     another you.
   AttackDamage: 0
+  itemType: Normal

@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 3
   AttackText: 
   AttackDamage: 0
+  itemType: Wierd

@@ -20,3 +20,4 @@ MonoBehaviour:
   CreepyRank: 2
   AttackText: Headbutt!
   AttackDamage: 10
+  itemType: Normal

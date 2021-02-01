@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 1
   AttackText: The patch uses Fashion Victim!
   AttackDamage: 5
+  itemType: Normal

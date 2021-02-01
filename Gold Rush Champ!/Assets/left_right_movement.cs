@@ -6,12 +6,36 @@ public class left_right_movement : MonoBehaviour
 {
     public float moveSpeed = 3f;
     public float multiplier = 1.5f;
-    void Start () {
-   
+    
+    //Reference to Walking Audio
+    PlayerAudio playerAudio;
+    private bool isPlaying;
+
+    void Start () 
+    {
+        playerAudio = FindObjectOfType<PlayerAudio>();
     }
    
     void Update ()
-    {                     
-        transform.Translate(Vector3.right * Time.deltaTime*multiplier * Input.GetAxis("Horizontal")* moveSpeed);      
+    {
+        transform.Translate(Vector3.right * Time.deltaTime * multiplier * Input.GetAxis("Horizontal") * moveSpeed);
+        PlayWalkingAudio();
+    }
+
+    private void PlayWalkingAudio()
+    {
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            if (!isPlaying)
+            {
+                playerAudio.AudioEvent("Play_Walking");
+                isPlaying = true;
+            }
+        }
+        else
+        {
+            playerAudio.AudioEvent("Stop_Walking");
+            isPlaying = false;
+        }
     }
 }

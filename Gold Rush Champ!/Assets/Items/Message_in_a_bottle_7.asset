@@ -20,3 +20,4 @@ MonoBehaviour:
   CreepyRank: 0
   AttackText: 
   AttackDamage: 0
+  itemType: Normal

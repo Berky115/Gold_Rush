@@ -21,3 +21,4 @@ MonoBehaviour:
   CreepyRank: 1
   AttackText: Pyrite got it's name because it can start fires
   AttackDamage: 20
+  itemType: Normal

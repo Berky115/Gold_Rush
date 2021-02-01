@@ -9,4 +9,9 @@ public class PlayerAudio : MonoBehaviour
         AkSoundEngine.SetState("ItemType", itemType);
         AkSoundEngine.PostEvent("Play_ItemGet", gameObject);
     }
+
+    public void AudioEvent(string eventName)
+    {
+        AkSoundEngine.PostEvent(eventName, gameObject);
+    }
 }
