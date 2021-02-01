@@ -139,7 +139,7 @@ public class BattleManager : MonoBehaviour
         AttackUI.SetUI(attackerItem);
 
         Debug.Log(attackerItem.AttackText);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         BossAttack.SetActive(false);
 
         //DAMAGE
@@ -147,7 +147,7 @@ public class BattleManager : MonoBehaviour
         PlayerHealth -= dmg;
         PlayerHealthBar.SetHealth(PlayerHealth);
         Debug.Log("The attack does "+dmg+" dmg");
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
 
         //NEXT TURN SET UP
@@ -176,7 +176,10 @@ public class BattleManager : MonoBehaviour
     public void PlayerPanAttack()
     {
         playerNextAction = PlayerAction.PanAttack;
-        playerActionText = "You attack with your pan.It does nothing against the monster.";
+        playerActionText = "You attack the monster with your pan.";
+        BossHealth -= 1;
+
+        BossHealthBar.SetHealth(BossHealth);
 
         //IEnumerator coroutine = DoPlayerAction("There is no escape.");
         //StartCoroutine(coroutine);
