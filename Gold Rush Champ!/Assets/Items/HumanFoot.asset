@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HumanFoot
   m_EditorClassIdentifier: 
   Name: A Human Foot
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: 71364581d7bfe8348a4b163514547c19, type: 3}
   Description: The human foot has 26 bones and is used to help balance the body.
     However, this one is unable to do so right now...
   RepeatIfThrownOut: 1
