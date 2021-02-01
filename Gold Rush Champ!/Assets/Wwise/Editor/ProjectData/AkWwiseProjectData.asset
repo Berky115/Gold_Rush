@@ -95,7 +95,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2d01e44e75a9e64ba62822c013a4ca82
     GuidInternal: 
-    m_lastTime: -8585895521172431247
+    m_lastTime: -8585894642011130952
     List:
     - name: Main
       guid: bac8264ab69d954fb9479730d78285d7
@@ -114,7 +114,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d9120a16e6a86644a0c2bdc5a2a88fc6
     GuidInternal: 
-    m_lastTime: -8585894660706098416
+    m_lastTime: -8585894642011170993
     List:
     - name: Play_Ambience
       guid: 12075bb55754364c8dc26e1c503dae2f
@@ -197,6 +197,18 @@ MonoBehaviour:
       - ElementName: Stop_Ambience
         ObjectType: 3
       Path: Default Work Unit\Stop_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_BossMusic
+      guid: b70ef42e768c7c47812a2cb5c0499aab
+      id: 656877296
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_BossMusic
+        ObjectType: 3
+      Path: Default Work Unit\Stop_BossMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
