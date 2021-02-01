@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Message_in_a_bottle_5
   m_EditorClassIdentifier: 
   Name: Message in a Bottle
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: ab43f3d9a87ced344bd112d2360f1c10, type: 3}
   Description: It's a message in a bottle! This one reads...'A carton of Eggs. A
     quart of Milk. A stick of Butter.'
   RepeatIfThrownOut: 0

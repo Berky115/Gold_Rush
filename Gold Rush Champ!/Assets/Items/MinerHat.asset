@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MinerHat
   m_EditorClassIdentifier: 
   Name: Miners Hat
-  ItemImage: {fileID: 21300000, guid: 17e553777fcaf8b42840ac7704562e23, type: 3}
+  ItemImage: {fileID: 21300000, guid: 78e0d4c9fc683b141b86488c91ef6514, type: 3}
   Description: A sturdy helm to protect you from danger!
   RepeatIfThrownOut: 0
   IsCursed: 0

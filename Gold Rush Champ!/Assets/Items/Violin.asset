@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Violin
   m_EditorClassIdentifier: 
   Name: A Violin
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: 3690d104aa88acc4aaf97312145e3568, type: 3}
   Description: A beloved musical instrument. This one is in surprisingly good condition
     despite being in the river!
   RepeatIfThrownOut: 0
