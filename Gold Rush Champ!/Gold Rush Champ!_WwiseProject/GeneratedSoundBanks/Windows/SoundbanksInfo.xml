@@ -19,7 +19,7 @@
 				<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbienceBus\Ambience"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="845046053">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2451193445">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -42,6 +42,14 @@
 					<AuxBusSends>
 						<AuxBus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbienceBus\Ambience"/>
 					</AuxBusSends>
+				</Event>
+				<Event Id="3463024606" Name="Play_BossMusic" ObjectPath="\Events\Default Work Unit\Play_BossMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="957932356" Language="SFX">
+							<ShortName>boss_160bpm_4-4_41b_1.wav</ShortName>
+							<Path>SFX\boss_160bpm_4-4_41b_1_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3545215997" Name="Play_ItemGet" ObjectPath="\Events\Default Work Unit\Play_ItemGet" DurationType="OneShot" DurationMin="2.840178" DurationMax="5.304827">
 					<IncludedMemoryFiles>
@@ -199,6 +207,7 @@
 					</AuxBusSends>
 				</Event>
 				<Event Id="2477713992" Name="Stop_Ambience" ObjectPath="\Events\Default Work Unit\Stop_Ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="656877296" Name="Stop_BossMusic" ObjectPath="\Events\Default Work Unit\Stop_BossMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1307794083" Name="Stop_MainMenuMusic" ObjectPath="\Events\Default Work Unit\Stop_MainMenuMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="165461773" Name="Stop_Walking" ObjectPath="\Events\Default Work Unit\Stop_Walking" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>

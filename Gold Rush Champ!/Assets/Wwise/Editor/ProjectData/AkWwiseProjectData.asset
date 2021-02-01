@@ -114,7 +114,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d9120a16e6a86644a0c2bdc5a2a88fc6
     GuidInternal: 
-    m_lastTime: -8585895521172491301
+    m_lastTime: -8585894660706098416
     List:
     - name: Play_Ambience
       guid: 12075bb55754364c8dc26e1c503dae2f
@@ -125,6 +125,18 @@ MonoBehaviour:
       - ElementName: Play_Ambience
         ObjectType: 3
       Path: Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BossMusic
+      guid: 48ca0847473a144f8bd04db20b03ab56
+      id: 3463024606
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_BossMusic
+        ObjectType: 3
+      Path: Default Work Unit\Play_BossMusic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -324,5 +336,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Gold Rush Champ!_WwiseProject
+  - /Gold Rush Champ!_WwiseProject/Events
+  - /Gold Rush Champ!_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -1,12 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
 	165461773	Stop_Walking			\Default Work Unit\Stop_Walking	
 	278617630	Play_Ambience			\Default Work Unit\Play_Ambience	
+	656877296	Stop_BossMusic			\Default Work Unit\Stop_BossMusic	
 	667425441	Play_MainMenuMusic			\Default Work Unit\Play_MainMenuMusic	
 	1307794083	Stop_MainMenuMusic			\Default Work Unit\Stop_MainMenuMusic	
 	1733885923	Play_Walking			\Default Work Unit\Play_Walking	
 	2477713992	Stop_Ambience			\Default Work Unit\Stop_Ambience	
 	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3463024606	Play_BossMusic			\Default Work Unit\Play_BossMusic	
 	3545215997	Play_ItemGet			\Default Work Unit\Play_ItemGet	
 
 State Group	ID	Name			Wwise Object Path	Notes
@@ -54,6 +56,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	877694805	itemcollect_cursed_02	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_cursed_A0C611F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Cursed\itemcollect_cursed_02		48379
 	878724656	itemcollect_cursed_03	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_cursed_2FE1A248.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Cursed\itemcollect_cursed_03		58891
 	909079240	itemcollect_weird_03	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\itemcollect_weird_033917D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickUpItem\Wierd\itemcollect_weird_03		49730
+	957932356	boss_160bpm_4-4_41b_1	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\boss_160bpm_4-4_41b_1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\BossMusic\boss_160bpm_4-4_41b_1\boss_160bpm_4-4_41b_1		1118884
 	984267069	n_ggr_violin_140bpm_4-4_41b	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\Bounced Files\n_ggr_violin_140bpm_4-4_41b_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainThemeContainer\MainTheme\n_ggr_violin_140bpm_4-4_41b		540890
 	984521360	footout_03	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_41FB5421.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_Out\footout_03		13604
 	1008248043	footin_02	C:\Users\Jake\Documents\Unity\GoldRush\Gold Rush Champ!\Gold Rush Champ!_WwiseProject\.cache\Windows\SFX\water_walking_6573313F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walking\Foot_In\footin_02		15340

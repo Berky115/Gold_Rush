@@ -11,9 +11,11 @@
 						<ObjectRef Name="Play_MainMenuMusic" ID="{7448C565-F51F-42AE-89FC-A4B78FC63D06}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music" ID="{9A9C255C-81FD-44C3-9886-4FE144C57243}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Ambience" ID="{C3DD315E-5ADE-46B9-A513-46D901DFCF11}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_BossMusic" ID="{2EF40EB7-8C76-477C-812A-2CB5C0499AAB}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music" ID="{8348DDB1-BAA8-4917-8E0F-7F0ADE4DB1DA}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Walking" ID="{080A2A11-B106-4C31-A521-33C673D210FD}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience" ID="{B55B0712-5457-4C36-8DC2-6E1C503DAE2F}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BossMusic" ID="{4708CA48-3A47-4F14-8BD0-4DB20B03AB56}" WorkUnitID="{160A12D9-A8E6-4466-A0C2-BDC5A2A88FC6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
