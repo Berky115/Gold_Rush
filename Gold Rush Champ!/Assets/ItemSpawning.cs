@@ -10,8 +10,8 @@ public class ItemSpawning : MonoBehaviour
 
     GameObject player;
     public float delay = .25f;
-    public float CreepyLevel = 1;
-    public float creepThreshold = 5;
+    public float CreepyLevel = 0.0f;
+    public float creepThreshold = 7.0f;
     public GameObject riverItem;
     public List<Item> ItemList;
     public bool isRunning = true;

@@ -71,7 +71,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e404f184a350f974194c533323046544, type: 2}
   - {fileID: 11400000, guid: 5efd686dc81ab7d4e90d9b3b78fb4995, type: 2}
   - {fileID: 11400000, guid: a1611313a1665bf44bbef0435e54d946, type: 2}
+  - {fileID: 11400000, guid: 410a868b01c76d34cbe7aa7dc38dddaf, type: 2}
+  - {fileID: 11400000, guid: 97ed4d28dec0c5c44ab977161efdef1f, type: 2}
+  - {fileID: 11400000, guid: dd30dd2607b535540892fbd9a151b7f5, type: 2}
+  - {fileID: 11400000, guid: 2c2394bf24ccfcb4d8d91e62e2934668, type: 2}
+  - {fileID: 11400000, guid: ab731543589797d4f81c3445efba561d, type: 2}
+  - {fileID: 11400000, guid: 0159fd3918b11524b93b308aa890ba01, type: 2}
   isRunning: 1
   StartFinalBattle:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

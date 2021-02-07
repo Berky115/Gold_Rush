@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Blood Shot Eyeball
   m_EditorClassIdentifier: 
   Name: A Blood Shot Eyeball
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 21300000, guid: 9330939b7294c3643b902149af43eee0, type: 3}
   Description: One can only wonder what sort of horrors this eye has behold
   RepeatIfThrownOut: 0
   IsCursed: 1

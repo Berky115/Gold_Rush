@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
-  m_Name: HELIXFOSSIL
+  m_Name: MongooseHead
   m_EditorClassIdentifier: 
-  Name: A Helix Fossil
-  ItemImage: {fileID: 21300000, guid: 88b99eb1302901d4d946c2669c2b9361, type: 3}
-  Description: Praise lord Helix!
+  Name: A Mongoose Skull
+  ItemImage: {fileID: 21300000, guid: a06d116ffa086c54994fde959671aa12, type: 3}
+  Description: Whatever this belonged to was quite a fearsome beast
   RepeatIfThrownOut: 0
-  IsCursed: 1
+  IsCursed: 0
   CreepyRank: 2
-  AttackText: Lord Helix would never harm you
-  AttackDamage: 0
-  itemType: Normal
+  AttackText: The bite hurts, but would have been worse if you were a snake
+  AttackDamage: 10
+  itemType: 

@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101f49ca59fdaef45a7729505b4066c1, type: 3}
-  m_Name: HELIXFOSSIL
+  m_Name: MonkeysPaw
   m_EditorClassIdentifier: 
-  Name: A Helix Fossil
-  ItemImage: {fileID: 21300000, guid: 88b99eb1302901d4d946c2669c2b9361, type: 3}
-  Description: Praise lord Helix!
+  Name: A Monkeys Paw
+  ItemImage: {fileID: 21300000, guid: 2b9d8ba09d44b8a4592e46c3649d1642, type: 3}
+  Description: Legends tell of this artifacts wonderous ability to make your dreams
+    come true. But be careful what you wish for.
   RepeatIfThrownOut: 0
   IsCursed: 1
-  CreepyRank: 2
-  AttackText: Lord Helix would never harm you
-  AttackDamage: 0
-  itemType: Normal
+  CreepyRank: 4
+  AttackText: This paw only wishes you pain
+  AttackDamage: 15
+  itemType: 

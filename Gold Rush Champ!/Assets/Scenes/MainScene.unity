@@ -1259,33 +1259,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
-      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
-      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
       propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1442740183}
-    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
-      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
-      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Load
-      objectReference: {fileID: 0}
-    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
-      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadScene, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
-      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
 --- !u!1001 &2599892874745993749

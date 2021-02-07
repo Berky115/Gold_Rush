@@ -47,7 +47,7 @@ public class ItemDescriptionPage : MonoBehaviour
 
     public void sendItemToFoundList() {
         GameObject.Find("Inventory").GetComponent<Inventory>().KeepItem(data);
-        GameObject.Find("ItemManager").GetComponent<ItemSpawning>().CreepyLevel += .3f;
+        GameObject.Find("ItemManager").GetComponent<ItemSpawning>().CreepyLevel += .2f;
         GameObject.Find("ItemManager").GetComponent<ItemSpawning>().checkCreepyLevel();
     }
 
