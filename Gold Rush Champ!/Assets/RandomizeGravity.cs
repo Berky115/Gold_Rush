@@ -5,7 +5,7 @@ using UnityEngine;
 public class RandomizeGravity : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float low = .2f;
+    public float low = 1.0f;
     public float high = 3.0f;
     void Start()
     {

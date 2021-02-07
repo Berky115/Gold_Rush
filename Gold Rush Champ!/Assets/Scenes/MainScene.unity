@@ -1259,9 +1259,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
+      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
+      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
       propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1442740183}
+    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
+      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
+      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Load
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
+      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201054860751546329, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
+      propertyPath: StartFinalBattle.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fb5db838769014cbd920e8eee82819, type: 3}
 --- !u!1001 &2599892874745993749
@@ -1397,10 +1421,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverObject
       objectReference: {fileID: 0}
-    - target: {fileID: 3847912791874138560, guid: de5311a4f9d95014285db96010dd3e1d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3847912791874138561, guid: de5311a4f9d95014285db96010dd3e1d, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1444,6 +1464,18 @@ PrefabInstance:
     - target: {fileID: 3847912791874138561, guid: de5311a4f9d95014285db96010dd3e1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3847912792242052873, guid: de5311a4f9d95014285db96010dd3e1d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.495283
+      objectReference: {fileID: 0}
+    - target: {fileID: 3847912792242052873, guid: de5311a4f9d95014285db96010dd3e1d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3847912792242052873, guid: de5311a4f9d95014285db96010dd3e1d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.84622616
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de5311a4f9d95014285db96010dd3e1d, type: 3}

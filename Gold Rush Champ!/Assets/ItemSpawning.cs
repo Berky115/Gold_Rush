@@ -9,7 +9,7 @@ public class ItemSpawning : MonoBehaviour
 
 
     GameObject player;
-    public int delay = 1;
+    public float delay = .25f;
     public float CreepyLevel = 1;
     public float creepThreshold = 5;
     public GameObject riverItem;
@@ -21,7 +21,6 @@ public class ItemSpawning : MonoBehaviour
         player = FindObjectOfType<Camera>().gameObject;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(isRunning == true){
@@ -34,7 +33,7 @@ public class ItemSpawning : MonoBehaviour
         isRunning = false;
         yield return new WaitForSeconds(delay);
         Debug.Log("NEW OBJECT GENERATED");
-        GameObject spawnedItem = Instantiate(riverItem, new Vector3(Random.Range(-5, 5), 2, 0), Quaternion.identity);
+        GameObject spawnedItem = Instantiate(riverItem, new Vector3(Random.Range(-5, 5), 3, 0), Quaternion.identity);
         int index = Random.Range(0, ItemList.Count);
         while(CreepyLevel < ItemList[index].CreepyRank){
             index = Random.Range(0, ItemList.Count); 

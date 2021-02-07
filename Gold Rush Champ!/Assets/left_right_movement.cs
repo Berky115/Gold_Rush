@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class left_right_movement : MonoBehaviour
 {
-    public float moveSpeed = 3f;
-    public float multiplier = 1.5f;
+    public float moveSpeed = 8f;
+    public float multiplier = 3f;
     
     //Reference to Walking Audio
     PlayerAudio playerAudio;
