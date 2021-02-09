@@ -1,61 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+
 
 public class ItemSpawning : MonoBehaviour
 {
     // Start is called before the first frame update
 
-
-    GameObject player;
     public float delay = .25f;
-    public float CreepyLevel = 0.0f;
-    public float creepThreshold = 7.0f;
     public GameObject riverItem;
     public List<Item> ItemList;
     public bool isRunning = true;
-    public UnityEvent StartFinalBattle;
     void Start()
     {
-        player = FindObjectOfType<Camera>().gameObject;
+        
     }
 
     void Update()
     {
         if(isRunning == true){
-            StartCoroutine(Wait());
+            StartCoroutine(generateItem());
         }
         
     }
 
-    public IEnumerator Wait(){
+    public IEnumerator generateItem(){
         isRunning = false;
         yield return new WaitForSeconds(delay);
-        Debug.Log("NEW OBJECT GENERATED");
-        GameObject spawnedItem = Instantiate(riverItem, new Vector3(Random.Range(-5, 5), 3, 0), Quaternion.identity);
+
+        float CreepyLevel = GameObject.FindWithTag("CreepManager").GetComponent<CreepManager>().CreepyLevel;
         int index = Random.Range(0, ItemList.Count);
+        Debug.Log("Creepy Rank " + ItemList[index].CreepyRank);
+         Debug.Log("Creepy Level " + CreepyLevel);
         while(CreepyLevel < ItemList[index].CreepyRank){
+            Debug.Log(CreepyLevel + " : " + ItemList[index].CreepyRank);
             index = Random.Range(0, ItemList.Count); 
         }
-        Debug.Log(ItemList[index].name);
-        CreepyLevel += .05f;
-        AkSoundEngine.SetRTPCValue("Corruption", CreepyLevel);
+
+        GameObject spawnedItem = Instantiate(riverItem, new Vector3(Random.Range(-5, 5), 3, 0), Quaternion.identity);
         spawnedItem.GetComponent<ObjectInfo>().data = ItemList[index];
-        Debug.Log("Creepy Level at " + CreepyLevel);
+        AkSoundEngine.SetRTPCValue("Corruption", CreepyLevel);
+        Debug.Log(ItemList[index].name);
+
+        if (!spawnedItem.GetComponent<ObjectInfo>().data.RepeatIfThrownOut)
+        {
+           ItemList.Remove(spawnedItem.GetComponent<ObjectInfo>().data);
+        }
+
         isRunning = true;
     }
-
-    public void checkCreepyLevel(){
-        if(CreepyLevel > creepThreshold){
-            Debug.Log("Time to transition to the final battle!");
-
-            if (StartFinalBattle != null) {
-                AkSoundEngine.PostEvent("Stop_Music", player);
-                AkSoundEngine.PostEvent("Stop_Ambience", player);
-                StartFinalBattle.Invoke();
-            }
-        }
-    }
-    
 }

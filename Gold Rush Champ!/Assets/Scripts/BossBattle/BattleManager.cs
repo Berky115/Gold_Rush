@@ -8,6 +8,8 @@ public class BattleManager : MonoBehaviour
 
     PlayerAction playerNextAction;
     string playerActionText = "";
+    public float delay = 1.0f;
+    public float attackTextDelay = 4.0f;
 
     public List<Item> FinalBossList;
     int currentCollectionIndex = 0;
@@ -39,18 +41,6 @@ public class BattleManager : MonoBehaviour
 
     private void BattleSetUp()
     {
-        ////Hide Objects\
-        //foreach(GameObject hideObject in HideOnStart)
-        //{
-        //    hideObject.SetActive(false);
-        //}
-
-        ////Show Objects
-        //foreach (GameObject showObject in ShowOnStart)
-        //{
-        //    showObject.SetActive(true);
-        //}
-
         //Set up UI Visibility
         FightStart.SetActive(true);
         BossAttack.SetActive(false);
@@ -89,7 +79,7 @@ public class BattleManager : MonoBehaviour
         {
             Debug.Log("A Round Begins");
 
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(delay);
 
             //BOSS ATTACK
             yield return StartCoroutine(BossAttacks());
@@ -99,7 +89,7 @@ public class BattleManager : MonoBehaviour
 
         }
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(delay);
 
         //DEATH ACTIONS
         DeathScreen.SetActive(true);
@@ -122,7 +112,7 @@ public class BattleManager : MonoBehaviour
         messagePlayerUI.DisplayText("Title", playerActionText);
         Debug.Log(playerActionText);
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(delay);
 
 
         PlayerAttack.SetActive(false);
@@ -139,16 +129,13 @@ public class BattleManager : MonoBehaviour
         AttackUI.SetUI(attackerItem);
 
         Debug.Log(attackerItem.AttackText);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(attackTextDelay);
         BossAttack.SetActive(false);
 
-        //DAMAGE
-        int dmg = attackerItem.AttackDamage;
-        PlayerHealth -= dmg;
+        PlayerHealth -= attackerItem.AttackDamage;
         PlayerHealthBar.SetHealth(PlayerHealth);
-        Debug.Log("The attack does "+dmg+" dmg");
-        yield return new WaitForSeconds(1);
-
+        Debug.Log("The attack does "+ attackerItem.AttackDamage +" dmg");
+        yield return new WaitForSeconds(delay);
 
         //NEXT TURN SET UP
         currentCollectionIndex++;
@@ -168,9 +155,6 @@ public class BattleManager : MonoBehaviour
     {
         playerNextAction = PlayerAction.Run;
         playerActionText = "There is no escape.";
-
-        //IEnumerator coroutine = DoPlayerAction("You attack with your pan.  It does nothing against the monster.");
-        //StartCoroutine(coroutine);
     }
 
     public void PlayerPanAttack()
