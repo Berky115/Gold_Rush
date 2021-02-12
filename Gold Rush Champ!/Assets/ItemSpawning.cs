@@ -30,10 +30,7 @@ public class ItemSpawning : MonoBehaviour
 
         float CreepyLevel = GameObject.FindWithTag("CreepManager").GetComponent<CreepManager>().CreepyLevel;
         int index = Random.Range(0, ItemList.Count);
-        Debug.Log("Creepy Rank " + ItemList[index].CreepyRank);
-         Debug.Log("Creepy Level " + CreepyLevel);
         while(CreepyLevel < ItemList[index].CreepyRank){
-            Debug.Log(CreepyLevel + " : " + ItemList[index].CreepyRank);
             index = Random.Range(0, ItemList.Count); 
         }
 
