@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 4587053004725810124}
   - component: {fileID: 4587053004725810127}
   m_Layer: 5
-  m_Name: Item Description
+  m_Name: UI_ITEM_DESCRIPTION
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 4587053004955793228}
   - component: {fileID: 4587053004955793231}
   m_Layer: 5
-  m_Name: Image
+  m_Name: UI_ITEM_IMAGE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -794,12 +794,12 @@ GameObject:
   - component: {fileID: 4587053005355441686}
   - component: {fileID: 4587053005355441705}
   m_Layer: 5
-  m_Name: Item Pop-Up
+  m_Name: UI_PANEL_ITEM_POP_UP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4587053005355441707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -983,9 +983,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ItemDescriptionPage, Assembly-CSharp
-        m_MethodName: HideItem_Static
+      - m_Target: {fileID: 1567712310}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: HideItemInfo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4587053005721037920}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d910dac737e3943478a1cce32b64fcfa, type: 3}
   m_Name: 
@@ -1469,6 +1469,7 @@ GameObject:
   - component: {fileID: 4587053005907681490}
   - component: {fileID: 4587053005907681493}
   - component: {fileID: 4587053005907681492}
+  - component: {fileID: 1567712310}
   m_Layer: 5
   m_Name: UIManager
   m_TagString: Untagged
@@ -1572,6 +1573,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 4587053006231539398}
+--- !u!114 &1567712310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587053005907681495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b3ff7d881e2e54faa20f1b7769c5a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 0}
+  UI_PANEL_ITEM_POP_UP: {fileID: 4587053005355441706}
 --- !u!1 &4587053005955313549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1674,7 @@ GameObject:
   - component: {fileID: 4587053005966673342}
   - component: {fileID: 4587053005966673329}
   m_Layer: 5
-  m_Name: Item Name
+  m_Name: UI_ITEM_NAME
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1847,9 +1862,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ItemDescriptionPage, Assembly-CSharp
-        m_MethodName: HideItem_Static
+      - m_Target: {fileID: 1567712310}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: sendItemToFoundList
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
