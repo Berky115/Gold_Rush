@@ -1232,13 +1232,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729995633}
     m_Modifications:
-    - target: {fileID: 4587053004955793217, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
-      propertyPath: m_Name
-      value: UI_ITEM_IMAGE
-      objectReference: {fileID: 0}
     - target: {fileID: 4587053005721037934, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4587053005907681488, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
       propertyPath: m_Pivot.x
@@ -1327,10 +1323,6 @@ PrefabInstance:
     - target: {fileID: 4587053005907681495, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
       propertyPath: m_Name
       value: UIManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 4587053005966673331, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
-      propertyPath: m_Name
-      value: UI_ITEM_NAME
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}

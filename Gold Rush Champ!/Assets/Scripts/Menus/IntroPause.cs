@@ -7,8 +7,7 @@ public class IntroPause : MonoBehaviour
     
     void Start()
     {
-        PauseControl.Pause();
+        Time.timeScale = 0f;
     }
 
-    
 }

@@ -1572,6 +1572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689bb087c8b6e414fb4557184eb2d5ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameIsPaused: 0
   pauseMenu: {fileID: 4587053006231539398}
 --- !u!114 &1567712310
 MonoBehaviour:
@@ -1585,8 +1586,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73b3ff7d881e2e54faa20f1b7769c5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameIsPaused: 0
   itemData: {fileID: 0}
   UI_PANEL_ITEM_POP_UP: {fileID: 4587053005355441706}
+  UI_PANEM_PAUSE_MENU: {fileID: 4587053006231539398}
 --- !u!1 &4587053005955313549
 GameObject:
   m_ObjectHideFlags: 0
