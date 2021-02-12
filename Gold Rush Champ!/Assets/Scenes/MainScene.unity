@@ -932,13 +932,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1595870833}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1431801755 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6455587188556934450, guid: ffd1b9a5ffe87a044a0b96ceca6a518e, type: 3}
   m_PrefabInstance: {fileID: 749880952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1595870833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4587053005721037920, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
+  m_PrefabInstance: {fileID: 3610848971855423235}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1861546807
 GameObject:
@@ -1232,9 +1237,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729995633}
     m_Modifications:
+    - target: {fileID: 4587053004725810127, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4587053005355441706, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4587053005721037934, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4587053005907681488, guid: fa4247fe4915bdb4092269e94d89eeb9, type: 3}
       propertyPath: m_Pivot.x

@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: A Voodoo doll!
   ItemImage: {fileID: 21300000, guid: a62da723f09043f42ae43bea802b0eaa, type: 3}
   Description: The term Voodoo doll is commonly employed to describe an effigy into
-    which pins are inserted. My the way, have you seen Coraline? What a great film
+    which pins are inserted. By the way, have you seen Coraline? What a great film
   RepeatIfThrownOut: 1
   IsCursed: 1
   CreepyRank: 3

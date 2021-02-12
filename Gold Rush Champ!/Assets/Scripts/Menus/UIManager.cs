@@ -13,10 +13,11 @@ public class UIManager : MonoBehaviour
     public Item itemData;
     public GameObject UI_PANEL_ITEM_POP_UP;
     public GameObject UI_PANEM_PAUSE_MENU;
+    public GameObject UI_PANEL_INSTRUCTIONS;
 
     private void Awake()
     {
-        
+
     }
 
     void Update()
@@ -45,6 +46,16 @@ public class UIManager : MonoBehaviour
         this.itemData = itemData;
         Pause();
     }
+
+    
+    public void ShowInstructions()
+    {
+        UI_PANEM_PAUSE_MENU.SetActive(false);
+        UI_PANEL_INSTRUCTIONS.SetActive(true);
+        Pause();
+    }
+
+
     
     public void HideItemInfo()
     {
